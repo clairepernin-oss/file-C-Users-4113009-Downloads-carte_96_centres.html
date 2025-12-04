@@ -1,0 +1,4721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b44345d5d219e9ad48cbcfedaac6f22a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b44345d5d219e9ad48cbcfedaac6f22a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b44345d5d219e9ad48cbcfedaac6f22a = L.map(
+                "map_b44345d5d219e9ad48cbcfedaac6f22a",
+                {
+                    center: [46.5, 2.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b1cf7a602bf1074fbc78768d92073e4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0b1cf7a602bf1074fbc78768d92073e4.addTo(map_b44345d5d219e9ad48cbcfedaac6f22a);
+        
+    
+            var marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_3b9ad7ac8d96338ead752f40958d934e = L.marker(
+                [43.5297, 5.4474],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_2600491df791e507e02919e317056bbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33decacc501ff49e4960b6f379ffc1e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a81fcd913441987d3d9ae7e52f2f491 = $(`<div id="html_6a81fcd913441987d3d9ae7e52f2f491" style="width: 100.0%; height: 100.0%;"><b>Pays d´Aix</b><br>Type : CH<br>Ville : Aix-en-Provence</div>`)[0];
+                popup_33decacc501ff49e4960b6f379ffc1e0.setContent(html_6a81fcd913441987d3d9ae7e52f2f491);
+            
+        
+
+        marker_3b9ad7ac8d96338ead752f40958d934e.bindPopup(popup_33decacc501ff49e4960b6f379ffc1e0)
+        ;
+
+        
+    
+    
+            marker_3b9ad7ac8d96338ead752f40958d934e.bindTooltip(
+                `<div>
+                     Aix-en-Provence (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b9ad7ac8d96338ead752f40958d934e.setIcon(icon_2600491df791e507e02919e317056bbd);
+            
+    
+            var marker_4f558bd1a001e8e6aa4555ac9cec2831 = L.marker(
+                [41.9192, 8.7386],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_1b6dcae7488cf92c0e42cfdb0c296bf3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b78bc50b587f1cd7a9f284a4983ae767 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bae723aeae353e40c2836e40630d8bb = $(`<div id="html_2bae723aeae353e40c2836e40630d8bb" style="width: 100.0%; height: 100.0%;"><b>Notre-Dame de la Miséricorde</b><br>Type : CH<br>Ville : Ajaccio</div>`)[0];
+                popup_b78bc50b587f1cd7a9f284a4983ae767.setContent(html_2bae723aeae353e40c2836e40630d8bb);
+            
+        
+
+        marker_4f558bd1a001e8e6aa4555ac9cec2831.bindPopup(popup_b78bc50b587f1cd7a9f284a4983ae767)
+        ;
+
+        
+    
+    
+            marker_4f558bd1a001e8e6aa4555ac9cec2831.bindTooltip(
+                `<div>
+                     Ajaccio (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f558bd1a001e8e6aa4555ac9cec2831.setIcon(icon_1b6dcae7488cf92c0e42cfdb0c296bf3);
+            
+    
+            var marker_cab8d096e70380b84251ab7be1de3dcc = L.marker(
+                [44.124, 4.08],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_7cfd64aca2ad39ca5fa0820dfe828175 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f084d5b3b8bd453527af61e85d1dd8a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa0befee3bf635e22316ef935853f58b = $(`<div id="html_aa0befee3bf635e22316ef935853f58b" style="width: 100.0%; height: 100.0%;"><b>Cévennes</b><br>Type : CH<br>Ville : Alès</div>`)[0];
+                popup_f084d5b3b8bd453527af61e85d1dd8a0.setContent(html_aa0befee3bf635e22316ef935853f58b);
+            
+        
+
+        marker_cab8d096e70380b84251ab7be1de3dcc.bindPopup(popup_f084d5b3b8bd453527af61e85d1dd8a0)
+        ;
+
+        
+    
+    
+            marker_cab8d096e70380b84251ab7be1de3dcc.bindTooltip(
+                `<div>
+                     Alès (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cab8d096e70380b84251ab7be1de3dcc.setIcon(icon_7cfd64aca2ad39ca5fa0820dfe828175);
+            
+    
+            var marker_87e88319cf748819ee987f897bed0f9f = L.marker(
+                [49.895, 2.3023],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_118623c56418c5231c9c06ffa1ce7b93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e325f65b543cba5eaa3784ad724e9559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f4c64582701f42169371e774fcf053b = $(`<div id="html_4f4c64582701f42169371e774fcf053b" style="width: 100.0%; height: 100.0%;"><b>Picardie</b><br>Type : CHU<br>Ville : Amiens</div>`)[0];
+                popup_e325f65b543cba5eaa3784ad724e9559.setContent(html_4f4c64582701f42169371e774fcf053b);
+            
+        
+
+        marker_87e88319cf748819ee987f897bed0f9f.bindPopup(popup_e325f65b543cba5eaa3784ad724e9559)
+        ;
+
+        
+    
+    
+            marker_87e88319cf748819ee987f897bed0f9f.bindTooltip(
+                `<div>
+                     Amiens (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87e88319cf748819ee987f897bed0f9f.setIcon(icon_118623c56418c5231c9c06ffa1ce7b93);
+            
+    
+            var marker_03670d9f16096b4c06988213f685dacb = L.marker(
+                [47.4784, -0.5632],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_32e55d337d83897c8c74444af67de303 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10e4d4dbd84c0c093dae0b3c2ca5a8bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ac1ffa197b31c40bc43437988bca8bc = $(`<div id="html_8ac1ffa197b31c40bc43437988bca8bc" style="width: 100.0%; height: 100.0%;"><b>Angers </b><br>Type : CHU<br>Ville : Angers</div>`)[0];
+                popup_10e4d4dbd84c0c093dae0b3c2ca5a8bb.setContent(html_8ac1ffa197b31c40bc43437988bca8bc);
+            
+        
+
+        marker_03670d9f16096b4c06988213f685dacb.bindPopup(popup_10e4d4dbd84c0c093dae0b3c2ca5a8bb)
+        ;
+
+        
+    
+    
+            marker_03670d9f16096b4c06988213f685dacb.bindTooltip(
+                `<div>
+                     Angers (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03670d9f16096b4c06988213f685dacb.setIcon(icon_32e55d337d83897c8c74444af67de303);
+            
+    
+            var marker_ef87bc3a8b5e70b762a1d65d06294bc6 = L.marker(
+                [45.8992, 6.1294],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_87d0cd25f509eca5f2d9394d951f6059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a4fa72fd509d33a2cac63d1a0afb44d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46822df40faf2f87a40bc1595f3938a5 = $(`<div id="html_46822df40faf2f87a40bc1595f3938a5" style="width: 100.0%; height: 100.0%;"><b>Genevois (CHANGE)</b><br>Type : CH<br>Ville : Annecy</div>`)[0];
+                popup_6a4fa72fd509d33a2cac63d1a0afb44d.setContent(html_46822df40faf2f87a40bc1595f3938a5);
+            
+        
+
+        marker_ef87bc3a8b5e70b762a1d65d06294bc6.bindPopup(popup_6a4fa72fd509d33a2cac63d1a0afb44d)
+        ;
+
+        
+    
+    
+            marker_ef87bc3a8b5e70b762a1d65d06294bc6.bindTooltip(
+                `<div>
+                     Annecy (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef87bc3a8b5e70b762a1d65d06294bc6.setIcon(icon_87d0cd25f509eca5f2d9394d951f6059);
+            
+    
+            var marker_f83306424a94baec91116c29038a5121 = L.marker(
+                [48.753, 2.2966],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_54c90bf4ad771024fcb80dc404e48f34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0654e5300980b45ae5ad7d872a3eb645 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c815991fd245de60a6ac05659b20200 = $(`<div id="html_7c815991fd245de60a6ac05659b20200" style="width: 100.0%; height: 100.0%;"><b>Ramsay Santé</b><br>Type : HP<br>Ville : Antony</div>`)[0];
+                popup_0654e5300980b45ae5ad7d872a3eb645.setContent(html_7c815991fd245de60a6ac05659b20200);
+            
+        
+
+        marker_f83306424a94baec91116c29038a5121.bindPopup(popup_0654e5300980b45ae5ad7d872a3eb645)
+        ;
+
+        
+    
+    
+            marker_f83306424a94baec91116c29038a5121.bindTooltip(
+                `<div>
+                     Antony (HP)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f83306424a94baec91116c29038a5121.setIcon(icon_54c90bf4ad771024fcb80dc404e48f34);
+            
+    
+            var marker_ef00cd731f2f7ce1c0baa4a787adbf78 = L.marker(
+                [48.9472, 2.2467],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_7ea4b3adbb60a5298cd0e8547c14012e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b10d0ac0c42a63bc30127dbfb75354c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38430d7b4503cc93669ed926d95cc0b7 = $(`<div id="html_38430d7b4503cc93669ed926d95cc0b7" style="width: 100.0%; height: 100.0%;"><b>Victor Dupouy</b><br>Type : CH<br>Ville : Argenteuil</div>`)[0];
+                popup_b10d0ac0c42a63bc30127dbfb75354c2.setContent(html_38430d7b4503cc93669ed926d95cc0b7);
+            
+        
+
+        marker_ef00cd731f2f7ce1c0baa4a787adbf78.bindPopup(popup_b10d0ac0c42a63bc30127dbfb75354c2)
+        ;
+
+        
+    
+    
+            marker_ef00cd731f2f7ce1c0baa4a787adbf78.bindTooltip(
+                `<div>
+                     Argenteuil (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef00cd731f2f7ce1c0baa4a787adbf78.setIcon(icon_7ea4b3adbb60a5298cd0e8547c14012e);
+            
+    
+            var marker_e561063235ba8fd1808e874eb3df8143 = L.marker(
+                [42.6973, 9.4509],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_8d68d779b9f4082f24d087e4ba3a3f53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0be95c757ee8c81e9c51ed947c070c91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f83f5b9741607d9632435ccefe829a7c = $(`<div id="html_f83f5b9741607d9632435ccefe829a7c" style="width: 100.0%; height: 100.0%;"><b>Bastia</b><br>Type : CH<br>Ville : Bastia</div>`)[0];
+                popup_0be95c757ee8c81e9c51ed947c070c91.setContent(html_f83f5b9741607d9632435ccefe829a7c);
+            
+        
+
+        marker_e561063235ba8fd1808e874eb3df8143.bindPopup(popup_0be95c757ee8c81e9c51ed947c070c91)
+        ;
+
+        
+    
+    
+            marker_e561063235ba8fd1808e874eb3df8143.bindTooltip(
+                `<div>
+                     Bastia (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e561063235ba8fd1808e874eb3df8143.setIcon(icon_8d68d779b9f4082f24d087e4ba3a3f53);
+            
+    
+            var marker_eafc4cafce70ca0fe8ec65ccc349a0a0 = L.marker(
+                [43.4929, -1.4748],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_02ba1ffcc0e72f4abc46c8ce1a57f876 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd8887a593a3ac81499af328528bcdca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d164f6a78362b942a8e5bfab6c4ad7ea = $(`<div id="html_d164f6a78362b942a8e5bfab6c4ad7ea" style="width: 100.0%; height: 100.0%;"><b>Côte Basque</b><br>Type : CH<br>Ville : Bayonne</div>`)[0];
+                popup_fd8887a593a3ac81499af328528bcdca.setContent(html_d164f6a78362b942a8e5bfab6c4ad7ea);
+            
+        
+
+        marker_eafc4cafce70ca0fe8ec65ccc349a0a0.bindPopup(popup_fd8887a593a3ac81499af328528bcdca)
+        ;
+
+        
+    
+    
+            marker_eafc4cafce70ca0fe8ec65ccc349a0a0.bindTooltip(
+                `<div>
+                     Bayonne (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eafc4cafce70ca0fe8ec65ccc349a0a0.setIcon(icon_02ba1ffcc0e72f4abc46c8ce1a57f876);
+            
+    
+            var marker_c9d5167624e865c26301e1d05e5c9bd0 = L.marker(
+                [47.2378, 6.0241],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_564daaa38add9495cfa26dfdf8bdfcf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d5e82da2a613da863db65f35084f28e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7422879bf8fb9415aa992e90604a7bc = $(`<div id="html_e7422879bf8fb9415aa992e90604a7bc" style="width: 100.0%; height: 100.0%;"><b>Jean-Minjoz</b><br>Type : CHU<br>Ville : Besançon</div>`)[0];
+                popup_1d5e82da2a613da863db65f35084f28e.setContent(html_e7422879bf8fb9415aa992e90604a7bc);
+            
+        
+
+        marker_c9d5167624e865c26301e1d05e5c9bd0.bindPopup(popup_1d5e82da2a613da863db65f35084f28e)
+        ;
+
+        
+    
+    
+            marker_c9d5167624e865c26301e1d05e5c9bd0.bindTooltip(
+                `<div>
+                     Besançon (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9d5167624e865c26301e1d05e5c9bd0.setIcon(icon_564daaa38add9495cfa26dfdf8bdfcf6);
+            
+    
+            var marker_e0896d512b35c44304a25845d26fdf62 = L.marker(
+                [48.65, 2.15],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_8ccc324618ead25ee7c244d9c6d7a30c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_040841bfa027c68e9edf76f0bfe8f021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ddcef34c8ef21601c033a2838f2b38f = $(`<div id="html_3ddcef34c8ef21601c033a2838f2b38f" style="width: 100.0%; height: 100.0%;"><b>Bligny</b><br>Type : CH<br>Ville : Bligny</div>`)[0];
+                popup_040841bfa027c68e9edf76f0bfe8f021.setContent(html_3ddcef34c8ef21601c033a2838f2b38f);
+            
+        
+
+        marker_e0896d512b35c44304a25845d26fdf62.bindPopup(popup_040841bfa027c68e9edf76f0bfe8f021)
+        ;
+
+        
+    
+    
+            marker_e0896d512b35c44304a25845d26fdf62.bindTooltip(
+                `<div>
+                     Bligny (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0896d512b35c44304a25845d26fdf62.setIcon(icon_8ccc324618ead25ee7c244d9c6d7a30c);
+            
+    
+            var marker_037c9718c84e0903055cd0a9eec93e4c = L.marker(
+                [44.8378, -0.5792],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_c4d3a3924cab68c51250eeba2abfdbeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98c6696535f741d49609df0b4061f202 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ecc09c688a1c585134dd0df9e999283 = $(`<div id="html_9ecc09c688a1c585134dd0df9e999283" style="width: 100.0%; height: 100.0%;"><b>Pellegrin</b><br>Type : CHU<br>Ville : Bordeaux</div>`)[0];
+                popup_98c6696535f741d49609df0b4061f202.setContent(html_9ecc09c688a1c585134dd0df9e999283);
+            
+        
+
+        marker_037c9718c84e0903055cd0a9eec93e4c.bindPopup(popup_98c6696535f741d49609df0b4061f202)
+        ;
+
+        
+    
+    
+            marker_037c9718c84e0903055cd0a9eec93e4c.bindTooltip(
+                `<div>
+                     Bordeaux (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_037c9718c84e0903055cd0a9eec93e4c.setIcon(icon_c4d3a3924cab68c51250eeba2abfdbeb);
+            
+    
+            var marker_a259c829404d5ba0da1c74f5cb501f8e = L.marker(
+                [48.3904, -4.4861],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f5323c05c2895171dfc1ef2b850dc914 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c87fcc649c6b73d88fab338dc0627f31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_072d5c5e89fce3359b80879a4a819f63 = $(`<div id="html_072d5c5e89fce3359b80879a4a819f63" style="width: 100.0%; height: 100.0%;"><b>Cavale Blanche</b><br>Type : CHU<br>Ville : Brest</div>`)[0];
+                popup_c87fcc649c6b73d88fab338dc0627f31.setContent(html_072d5c5e89fce3359b80879a4a819f63);
+            
+        
+
+        marker_a259c829404d5ba0da1c74f5cb501f8e.bindPopup(popup_c87fcc649c6b73d88fab338dc0627f31)
+        ;
+
+        
+    
+    
+            marker_a259c829404d5ba0da1c74f5cb501f8e.bindTooltip(
+                `<div>
+                     Brest (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a259c829404d5ba0da1c74f5cb501f8e.setIcon(icon_f5323c05c2895171dfc1ef2b850dc914);
+            
+    
+            var marker_ba35c3296d64de86721082f7688e5559 = L.marker(
+                [49.1829, -0.3707],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_8f0fc7e1f2103a3bdd2669f47983306e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7749c73ea0a7599c3c3f9018994ff59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e017dfacc9471c4da103f93d7062e397 = $(`<div id="html_e017dfacc9471c4da103f93d7062e397" style="width: 100.0%; height: 100.0%;"><b>Normandie</b><br>Type : CHU<br>Ville : Caen</div>`)[0];
+                popup_b7749c73ea0a7599c3c3f9018994ff59.setContent(html_e017dfacc9471c4da103f93d7062e397);
+            
+        
+
+        marker_ba35c3296d64de86721082f7688e5559.bindPopup(popup_b7749c73ea0a7599c3c3f9018994ff59)
+        ;
+
+        
+    
+    
+            marker_ba35c3296d64de86721082f7688e5559.bindTooltip(
+                `<div>
+                     Caen (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba35c3296d64de86721082f7688e5559.setIcon(icon_8f0fc7e1f2103a3bdd2669f47983306e);
+            
+    
+            var marker_75ae02e392fc4bf40754495e59b37cb4 = L.marker(
+                [44.4491, 1.4364],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_607870cf6d15007f3318a7d996817f3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a9999be4967a0b35d1809491f80fb19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ff1a25e50a2b8997f000aeab9c56532 = $(`<div id="html_0ff1a25e50a2b8997f000aeab9c56532" style="width: 100.0%; height: 100.0%;"><b>Cahors</b><br>Type : CH<br>Ville : Cahors</div>`)[0];
+                popup_7a9999be4967a0b35d1809491f80fb19.setContent(html_0ff1a25e50a2b8997f000aeab9c56532);
+            
+        
+
+        marker_75ae02e392fc4bf40754495e59b37cb4.bindPopup(popup_7a9999be4967a0b35d1809491f80fb19)
+        ;
+
+        
+    
+    
+            marker_75ae02e392fc4bf40754495e59b37cb4.bindTooltip(
+                `<div>
+                     Cahors (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75ae02e392fc4bf40754495e59b37cb4.setIcon(icon_607870cf6d15007f3318a7d996817f3b);
+            
+    
+            var marker_d4784329f79129c3025396dd53156b26 = L.marker(
+                [4.9224, -52.3135],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_1b0f71a0a7f3327fd94f380190323cc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89227b841071f750019497d6691ed387 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39c5b1641f9280e20a02d4034563a9a6 = $(`<div id="html_39c5b1641f9280e20a02d4034563a9a6" style="width: 100.0%; height: 100.0%;"><b>Andrée Rosemon</b><br>Type : CH<br>Ville : Cayenne (Guyane)</div>`)[0];
+                popup_89227b841071f750019497d6691ed387.setContent(html_39c5b1641f9280e20a02d4034563a9a6);
+            
+        
+
+        marker_d4784329f79129c3025396dd53156b26.bindPopup(popup_89227b841071f750019497d6691ed387)
+        ;
+
+        
+    
+    
+            marker_d4784329f79129c3025396dd53156b26.bindTooltip(
+                `<div>
+                     Cayenne (Guyane) (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d4784329f79129c3025396dd53156b26.setIcon(icon_1b0f71a0a7f3327fd94f380190323cc4);
+            
+    
+            var marker_6b998379c5bb45478e6638d2b86b8a34 = L.marker(
+                [46.78, 4.8526],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_e66ac9aa2d13a27e21b046f549b757fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a33adeccaf33a94772e51310c41e357 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92f5a3385d0fb1429eb84c7ef4878f39 = $(`<div id="html_92f5a3385d0fb1429eb84c7ef4878f39" style="width: 100.0%; height: 100.0%;"><b>Chalon sur Saone</b><br>Type : CH<br>Ville : Chalon-sur-Saône</div>`)[0];
+                popup_1a33adeccaf33a94772e51310c41e357.setContent(html_92f5a3385d0fb1429eb84c7ef4878f39);
+            
+        
+
+        marker_6b998379c5bb45478e6638d2b86b8a34.bindPopup(popup_1a33adeccaf33a94772e51310c41e357)
+        ;
+
+        
+    
+    
+            marker_6b998379c5bb45478e6638d2b86b8a34.bindTooltip(
+                `<div>
+                     Chalon-sur-Saône (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b998379c5bb45478e6638d2b86b8a34.setIcon(icon_e66ac9aa2d13a27e21b046f549b757fb);
+            
+    
+            var marker_5c64ca7d6cf25454b3514548970a4ff8 = L.marker(
+                [45.5646, 5.9178],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_01d3dca48d10664577446b5d4103bc88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21f928fb2d4d30c176365951af222278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_479d26cf4e73a3383bd8b942ee8e5afa = $(`<div id="html_479d26cf4e73a3383bd8b942ee8e5afa" style="width: 100.0%; height: 100.0%;"><b>Metropole Savoie</b><br>Type : CH<br>Ville : Chambéry</div>`)[0];
+                popup_21f928fb2d4d30c176365951af222278.setContent(html_479d26cf4e73a3383bd8b942ee8e5afa);
+            
+        
+
+        marker_5c64ca7d6cf25454b3514548970a4ff8.bindPopup(popup_21f928fb2d4d30c176365951af222278)
+        ;
+
+        
+    
+    
+            marker_5c64ca7d6cf25454b3514548970a4ff8.bindTooltip(
+                `<div>
+                     Chambéry (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c64ca7d6cf25454b3514548970a4ff8.setIcon(icon_01d3dca48d10664577446b5d4103bc88);
+            
+    
+            var marker_61e0283852520f445a1d6dd4f1743e70 = L.marker(
+                [45.7772, 3.087],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_cb033a1764a7833a2fbd881972339509 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d5d9c47f337abdab708f7596b658c8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e53bfc2ee954716a16219f65e8044d43 = $(`<div id="html_e53bfc2ee954716a16219f65e8044d43" style="width: 100.0%; height: 100.0%;"><b>Gabriel Montpied</b><br>Type : CHU<br>Ville : Clermont-Ferrand</div>`)[0];
+                popup_8d5d9c47f337abdab708f7596b658c8d.setContent(html_e53bfc2ee954716a16219f65e8044d43);
+            
+        
+
+        marker_61e0283852520f445a1d6dd4f1743e70.bindPopup(popup_8d5d9c47f337abdab708f7596b658c8d)
+        ;
+
+        
+    
+    
+            marker_61e0283852520f445a1d6dd4f1743e70.bindTooltip(
+                `<div>
+                     Clermont-Ferrand (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61e0283852520f445a1d6dd4f1743e70.setIcon(icon_cb033a1764a7833a2fbd881972339509);
+            
+    
+            var marker_09ba8a03741211f873abcc0bdc90cd7e = L.marker(
+                [48.079, 7.3585],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_028ac9261cf88d370ec38cac1563099f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fdb0ee1a1a299bc9daf3eaddc7581f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc04117c95b1ebcaa2706daff2f4fd82 = $(`<div id="html_fc04117c95b1ebcaa2706daff2f4fd82" style="width: 100.0%; height: 100.0%;"><b>Hopitaux Civils</b><br>Type : CH<br>Ville : Colmar</div>`)[0];
+                popup_7fdb0ee1a1a299bc9daf3eaddc7581f3.setContent(html_fc04117c95b1ebcaa2706daff2f4fd82);
+            
+        
+
+        marker_09ba8a03741211f873abcc0bdc90cd7e.bindPopup(popup_7fdb0ee1a1a299bc9daf3eaddc7581f3)
+        ;
+
+        
+    
+    
+            marker_09ba8a03741211f873abcc0bdc90cd7e.bindTooltip(
+                `<div>
+                     Colmar (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09ba8a03741211f873abcc0bdc90cd7e.setIcon(icon_028ac9261cf88d370ec38cac1563099f);
+            
+    
+            var marker_a9a309946e0a370bc3c588297e7f5de6 = L.marker(
+                [46.15, 6.3],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_d5305daa8337eda2cb109dcd21bb2be4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bc3fa2570e906b8b2b521ad6d1fa323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13d135c808d260de717c3a8cf51fcdf8 = $(`<div id="html_13d135c808d260de717c3a8cf51fcdf8" style="width: 100.0%; height: 100.0%;"><b>Alpes Leman</b><br>Type : CH<br>Ville : Contamine-sur-Arve</div>`)[0];
+                popup_7bc3fa2570e906b8b2b521ad6d1fa323.setContent(html_13d135c808d260de717c3a8cf51fcdf8);
+            
+        
+
+        marker_a9a309946e0a370bc3c588297e7f5de6.bindPopup(popup_7bc3fa2570e906b8b2b521ad6d1fa323)
+        ;
+
+        
+    
+    
+            marker_a9a309946e0a370bc3c588297e7f5de6.bindTooltip(
+                `<div>
+                     Contamine-sur-Arve (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9a309946e0a370bc3c588297e7f5de6.setIcon(icon_d5305daa8337eda2cb109dcd21bb2be4);
+            
+    
+            var marker_f4e72d3b9723da04edeef128ce2a4544 = L.marker(
+                [43.71, -1.053],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_1ee81993006f33ed9f2e09d884655c68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e489180e0a2099408238035322a42d28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7611441023efb2ae83ee9344cac839ac = $(`<div id="html_7611441023efb2ae83ee9344cac839ac" style="width: 100.0%; height: 100.0%;"><b>Dax - Côte d'argent</b><br>Type : CH<br>Ville : Dax</div>`)[0];
+                popup_e489180e0a2099408238035322a42d28.setContent(html_7611441023efb2ae83ee9344cac839ac);
+            
+        
+
+        marker_f4e72d3b9723da04edeef128ce2a4544.bindPopup(popup_e489180e0a2099408238035322a42d28)
+        ;
+
+        
+    
+    
+            marker_f4e72d3b9723da04edeef128ce2a4544.bindTooltip(
+                `<div>
+                     Dax (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4e72d3b9723da04edeef128ce2a4544.setIcon(icon_1ee81993006f33ed9f2e09d884655c68);
+            
+    
+            var marker_07c568d8d0969e629c9c4ad58bdf5c88 = L.marker(
+                [47.322, 5.0415],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_642386fb9853d8bdee53461be060a9f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35168af83fa2b5ead5e2d61d71db3253 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e3a9765127e7b472b2c29870bafb9fa = $(`<div id="html_4e3a9765127e7b472b2c29870bafb9fa" style="width: 100.0%; height: 100.0%;"><b>Bourgogne</b><br>Type : CHU<br>Ville : Dijon</div>`)[0];
+                popup_35168af83fa2b5ead5e2d61d71db3253.setContent(html_4e3a9765127e7b472b2c29870bafb9fa);
+            
+        
+
+        marker_07c568d8d0969e629c9c4ad58bdf5c88.bindPopup(popup_35168af83fa2b5ead5e2d61d71db3253)
+        ;
+
+        
+    
+    
+            marker_07c568d8d0969e629c9c4ad58bdf5c88.bindTooltip(
+                `<div>
+                     Dijon (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07c568d8d0969e629c9c4ad58bdf5c88.setIcon(icon_642386fb9853d8bdee53461be060a9f3);
+            
+    
+            var marker_fe74bebd81896fc5f0db983536f83a95 = L.marker(
+                [50.3667, 3.0667],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_6d0f5cab103ddfea84072c491e408957 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41d27b76d3c22ebe1aaa8a22f267fa77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c0578b54255c3fe3aa627b98ff9ce6f = $(`<div id="html_0c0578b54255c3fe3aa627b98ff9ce6f" style="width: 100.0%; height: 100.0%;"><b>Douai</b><br>Type : CH<br>Ville : Douai</div>`)[0];
+                popup_41d27b76d3c22ebe1aaa8a22f267fa77.setContent(html_0c0578b54255c3fe3aa627b98ff9ce6f);
+            
+        
+
+        marker_fe74bebd81896fc5f0db983536f83a95.bindPopup(popup_41d27b76d3c22ebe1aaa8a22f267fa77)
+        ;
+
+        
+    
+    
+            marker_fe74bebd81896fc5f0db983536f83a95.bindTooltip(
+                `<div>
+                     Douai (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe74bebd81896fc5f0db983536f83a95.setIcon(icon_6d0f5cab103ddfea84072c491e408957);
+            
+    
+            var marker_ccc8701590ba1ed24677b9d8428eb3f9 = L.marker(
+                [14.6161, -61.0588],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_e5fb2755547c626d512537070e9b5de7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0b3db416496e8d61aa1b3895b9e28f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a11cfc973be38c407e161c6826180bcc = $(`<div id="html_a11cfc973be38c407e161c6826180bcc" style="width: 100.0%; height: 100.0%;"><b>Pierre Zobda-Quitman</b><br>Type : CHU<br>Ville : Fort-de-France (Martinique)</div>`)[0];
+                popup_e0b3db416496e8d61aa1b3895b9e28f0.setContent(html_a11cfc973be38c407e161c6826180bcc);
+            
+        
+
+        marker_ccc8701590ba1ed24677b9d8428eb3f9.bindPopup(popup_e0b3db416496e8d61aa1b3895b9e28f0)
+        ;
+
+        
+    
+    
+            marker_ccc8701590ba1ed24677b9d8428eb3f9.bindTooltip(
+                `<div>
+                     Fort-de-France (Martinique) (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ccc8701590ba1ed24677b9d8428eb3f9.setIcon(icon_e5fb2755547c626d512537070e9b5de7);
+            
+    
+            var marker_668e92b41b3b2c12ade1993ab87b805e = L.marker(
+                [45.1885, 5.7245],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f396f5d9814ccede6f1c3c687d422c27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20c77a6b498ff6a5bbaef23a00fe6c92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d8d8fff4e193b28c4c7810276690890 = $(`<div id="html_1d8d8fff4e193b28c4c7810276690890" style="width: 100.0%; height: 100.0%;"><b>Alpes Michallon</b><br>Type : CHU<br>Ville : Grenoble</div>`)[0];
+                popup_20c77a6b498ff6a5bbaef23a00fe6c92.setContent(html_1d8d8fff4e193b28c4c7810276690890);
+            
+        
+
+        marker_668e92b41b3b2c12ade1993ab87b805e.bindPopup(popup_20c77a6b498ff6a5bbaef23a00fe6c92)
+        ;
+
+        
+    
+    
+            marker_668e92b41b3b2c12ade1993ab87b805e.bindTooltip(
+                `<div>
+                     Grenoble (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_668e92b41b3b2c12ade1993ab87b805e.setIcon(icon_f396f5d9814ccede6f1c3c687d422c27);
+            
+    
+            var marker_d5141df09e500897d65bbe7a8aadd2eb = L.marker(
+                [46.67, -1.426],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_ddadf24b00866a8b1f4d22e6691b8a01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07fe03bdf2e673b3545df9f4cbefd265 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1e5ef52c3e9c1311e4c1e4334c199de = $(`<div id="html_b1e5ef52c3e9c1311e4c1e4334c199de" style="width: 100.0%; height: 100.0%;"><b>Départemental Vendée</b><br>Type : CH<br>Ville : La Roche-sur-Yon</div>`)[0];
+                popup_07fe03bdf2e673b3545df9f4cbefd265.setContent(html_b1e5ef52c3e9c1311e4c1e4334c199de);
+            
+        
+
+        marker_d5141df09e500897d65bbe7a8aadd2eb.bindPopup(popup_07fe03bdf2e673b3545df9f4cbefd265)
+        ;
+
+        
+    
+    
+            marker_d5141df09e500897d65bbe7a8aadd2eb.bindTooltip(
+                `<div>
+                     La Roche-sur-Yon (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5141df09e500897d65bbe7a8aadd2eb.setIcon(icon_ddadf24b00866a8b1f4d22e6691b8a01);
+            
+    
+            var marker_0e37fb6da2939c4a6a9ac9be2dff6118 = L.marker(
+                [48.0061, 0.1996],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_00e5a400c0dd1e03f245d199e96bd502 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85b017719e688407b3f06d488402322c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86b0057bd2eee2cac82ee7dce2714aeb = $(`<div id="html_86b0057bd2eee2cac82ee7dce2714aeb" style="width: 100.0%; height: 100.0%;"><b>Le Mans</b><br>Type : CH<br>Ville : Le Mans</div>`)[0];
+                popup_85b017719e688407b3f06d488402322c.setContent(html_86b0057bd2eee2cac82ee7dce2714aeb);
+            
+        
+
+        marker_0e37fb6da2939c4a6a9ac9be2dff6118.bindPopup(popup_85b017719e688407b3f06d488402322c)
+        ;
+
+        
+    
+    
+            marker_0e37fb6da2939c4a6a9ac9be2dff6118.bindTooltip(
+                `<div>
+                     Le Mans (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e37fb6da2939c4a6a9ac9be2dff6118.setIcon(icon_00e5a400c0dd1e03f245d199e96bd502);
+            
+    
+            var marker_7339fe4a4c509d04726f40ee6a656e7d = L.marker(
+                [50.6292, 3.0573],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_43bbaa7876ddad9c958b436cd19a79ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4b65cdc247b5e57df315fe42de032cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ba8c439078b8a816b17ea621c6e4009 = $(`<div id="html_4ba8c439078b8a816b17ea621c6e4009" style="width: 100.0%; height: 100.0%;"><b>Fourrier</b><br>Type : CHU<br>Ville : Lille</div>`)[0];
+                popup_f4b65cdc247b5e57df315fe42de032cc.setContent(html_4ba8c439078b8a816b17ea621c6e4009);
+            
+        
+
+        marker_7339fe4a4c509d04726f40ee6a656e7d.bindPopup(popup_f4b65cdc247b5e57df315fe42de032cc)
+        ;
+
+        
+    
+    
+            marker_7339fe4a4c509d04726f40ee6a656e7d.bindTooltip(
+                `<div>
+                     Lille (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7339fe4a4c509d04726f40ee6a656e7d.setIcon(icon_43bbaa7876ddad9c958b436cd19a79ba);
+            
+    
+            var marker_fe9f46ea5d32aec187a1eab9dc58ddb2 = L.marker(
+                [45.8336, 1.2611],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_7d1d29eaf9b4d8b483e1fe1b2ce32511 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24a429f943d2176536b989ea75c71f8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_382a61914337c69b0bb8dc3d393f9f13 = $(`<div id="html_382a61914337c69b0bb8dc3d393f9f13" style="width: 100.0%; height: 100.0%;"><b>Dupuytren</b><br>Type : CHU<br>Ville : Limoges</div>`)[0];
+                popup_24a429f943d2176536b989ea75c71f8a.setContent(html_382a61914337c69b0bb8dc3d393f9f13);
+            
+        
+
+        marker_fe9f46ea5d32aec187a1eab9dc58ddb2.bindPopup(popup_24a429f943d2176536b989ea75c71f8a)
+        ;
+
+        
+    
+    
+            marker_fe9f46ea5d32aec187a1eab9dc58ddb2.bindTooltip(
+                `<div>
+                     Limoges (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe9f46ea5d32aec187a1eab9dc58ddb2.setIcon(icon_7d1d29eaf9b4d8b483e1fe1b2ce32511);
+            
+    
+            var marker_b3125245067aa05615de0af01c65df5e = L.marker(
+                [48.695, 2.307],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_cc81c133549f0becfaa16696f1be87d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdbd04c507b2cf6261f6074c5524ac89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3dfecd5d2a3609f24ad6fc0fa52e236 = $(`<div id="html_c3dfecd5d2a3609f24ad6fc0fa52e236" style="width: 100.0%; height: 100.0%;"><b>GH Nord-Essonne</b><br>Type : CH<br>Ville : Longjumeau</div>`)[0];
+                popup_fdbd04c507b2cf6261f6074c5524ac89.setContent(html_c3dfecd5d2a3609f24ad6fc0fa52e236);
+            
+        
+
+        marker_b3125245067aa05615de0af01c65df5e.bindPopup(popup_fdbd04c507b2cf6261f6074c5524ac89)
+        ;
+
+        
+    
+    
+            marker_b3125245067aa05615de0af01c65df5e.bindTooltip(
+                `<div>
+                     Longjumeau (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3125245067aa05615de0af01c65df5e.setIcon(icon_cc81c133549f0becfaa16696f1be87d7);
+            
+    
+            var marker_1fdeaf907b0e261bc6ca90ebf90c5b48 = L.marker(
+                [45.764, 4.8357],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_85d6917713c70121572a8daded68cfd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78a87cb3f9e34460ffe502e1e4f71468 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93d9777c44a995ef4658457ab8a2ce6b = $(`<div id="html_93d9777c44a995ef4658457ab8a2ce6b" style="width: 100.0%; height: 100.0%;"><b>HCL Croix Rousse</b><br>Type : CHU<br>Ville : Lyon</div>`)[0];
+                popup_78a87cb3f9e34460ffe502e1e4f71468.setContent(html_93d9777c44a995ef4658457ab8a2ce6b);
+            
+        
+
+        marker_1fdeaf907b0e261bc6ca90ebf90c5b48.bindPopup(popup_78a87cb3f9e34460ffe502e1e4f71468)
+        ;
+
+        
+    
+    
+            marker_1fdeaf907b0e261bc6ca90ebf90c5b48.bindTooltip(
+                `<div>
+                     Lyon (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fdeaf907b0e261bc6ca90ebf90c5b48.setIcon(icon_85d6917713c70121572a8daded68cfd4);
+            
+    
+            var marker_f9e0001a8f35af60c245143edd70cd6e = L.marker(
+                [43.2965, 5.3698],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_460b66b7519d4d3d901071c03694b17c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_029874939167834b96189a1d4bc1fb59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c42b33c31a1640228365a11c4b3bfdc = $(`<div id="html_3c42b33c31a1640228365a11c4b3bfdc" style="width: 100.0%; height: 100.0%;"><b>HIA Laveran</b><br>Type : MI<br>Ville : Marseille</div>`)[0];
+                popup_029874939167834b96189a1d4bc1fb59.setContent(html_3c42b33c31a1640228365a11c4b3bfdc);
+            
+        
+
+        marker_f9e0001a8f35af60c245143edd70cd6e.bindPopup(popup_029874939167834b96189a1d4bc1fb59)
+        ;
+
+        
+    
+    
+            marker_f9e0001a8f35af60c245143edd70cd6e.bindTooltip(
+                `<div>
+                     Marseille (MI)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9e0001a8f35af60c245143edd70cd6e.setIcon(icon_460b66b7519d4d3d901071c03694b17c);
+            
+    
+            var marker_8d3d50c3cc6acf13af14ffef484f7175 = L.marker(
+                [43.2965, 5.3698],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_b27f35c2b5272ca8201c0943a57bf1b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f647bc4db3c1db23d15a24765cd6570f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c82b884b3286f45db4052cc3a5fec14 = $(`<div id="html_6c82b884b3286f45db4052cc3a5fec14" style="width: 100.0%; height: 100.0%;"><b>AP-HM La Timone</b><br>Type : CHU<br>Ville : Marseille</div>`)[0];
+                popup_f647bc4db3c1db23d15a24765cd6570f.setContent(html_6c82b884b3286f45db4052cc3a5fec14);
+            
+        
+
+        marker_8d3d50c3cc6acf13af14ffef484f7175.bindPopup(popup_f647bc4db3c1db23d15a24765cd6570f)
+        ;
+
+        
+    
+    
+            marker_8d3d50c3cc6acf13af14ffef484f7175.bindTooltip(
+                `<div>
+                     Marseille (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d3d50c3cc6acf13af14ffef484f7175.setIcon(icon_b27f35c2b5272ca8201c0943a57bf1b5);
+            
+    
+            var marker_d34b6b55e84368fae2d34d385add4cce = L.marker(
+                [48.5396, 2.6554],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_0c73f332bc689f89c8e8d9e24665e238 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c96fdde9be975215aad9c3a6ddf7b96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_438024edca913046b3b20e9465b56683 = $(`<div id="html_438024edca913046b3b20e9465b56683" style="width: 100.0%; height: 100.0%;"><b>Melun</b><br>Type : CH<br>Ville : Melun</div>`)[0];
+                popup_6c96fdde9be975215aad9c3a6ddf7b96.setContent(html_438024edca913046b3b20e9465b56683);
+            
+        
+
+        marker_d34b6b55e84368fae2d34d385add4cce.bindPopup(popup_6c96fdde9be975215aad9c3a6ddf7b96)
+        ;
+
+        
+    
+    
+            marker_d34b6b55e84368fae2d34d385add4cce.bindTooltip(
+                `<div>
+                     Melun (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d34b6b55e84368fae2d34d385add4cce.setIcon(icon_0c73f332bc689f89c8e8d9e24665e238);
+            
+    
+            var marker_0763c2ec80d6c49aaf48bb751944a193 = L.marker(
+                [43.89, -0.5],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_d7b326bd7079ce104adf534d0e1f694c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b34ccdbead0a8c102cd59d5b46d325f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c5ddee721cded5b38f85a3459161df6 = $(`<div id="html_9c5ddee721cded5b38f85a3459161df6" style="width: 100.0%; height: 100.0%;"><b>Les Landes</b><br>Type : CH<br>Ville : Mont de Marsan</div>`)[0];
+                popup_b34ccdbead0a8c102cd59d5b46d325f3.setContent(html_9c5ddee721cded5b38f85a3459161df6);
+            
+        
+
+        marker_0763c2ec80d6c49aaf48bb751944a193.bindPopup(popup_b34ccdbead0a8c102cd59d5b46d325f3)
+        ;
+
+        
+    
+    
+            marker_0763c2ec80d6c49aaf48bb751944a193.bindTooltip(
+                `<div>
+                     Mont de Marsan (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0763c2ec80d6c49aaf48bb751944a193.setIcon(icon_d7b326bd7079ce104adf534d0e1f694c);
+            
+    
+            var marker_bd364f203f9d959b17805c6ab5cd4ecc = L.marker(
+                [43.6119, 3.8777],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_7eddccc5bc3e0ae3800d89702e2160f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f1bdc072a4b85e82b643d4e6e4aec1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_305eccb8ac1b7ac98235f2eaccfb0185 = $(`<div id="html_305eccb8ac1b7ac98235f2eaccfb0185" style="width: 100.0%; height: 100.0%;"><b>La Colombière</b><br>Type : CHU<br>Ville : Montpellier</div>`)[0];
+                popup_0f1bdc072a4b85e82b643d4e6e4aec1d.setContent(html_305eccb8ac1b7ac98235f2eaccfb0185);
+            
+        
+
+        marker_bd364f203f9d959b17805c6ab5cd4ecc.bindPopup(popup_0f1bdc072a4b85e82b643d4e6e4aec1d)
+        ;
+
+        
+    
+    
+            marker_bd364f203f9d959b17805c6ab5cd4ecc.bindTooltip(
+                `<div>
+                     Montpellier (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd364f203f9d959b17805c6ab5cd4ecc.setIcon(icon_7eddccc5bc3e0ae3800d89702e2160f5);
+            
+    
+            var marker_ed5c86ba3ddaaa9f6cdc489cf4ca2a52 = L.marker(
+                [48.6921, 6.1844],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_6e316505fcb1b5c0da089a7bea34b67f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ef5fc284971bd2ce98535b432d61859 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b6d4a5bfcdffcd19261deb3cf90fc54 = $(`<div id="html_6b6d4a5bfcdffcd19261deb3cf90fc54" style="width: 100.0%; height: 100.0%;"><b>Brabois</b><br>Type : CHU<br>Ville : Nancy</div>`)[0];
+                popup_9ef5fc284971bd2ce98535b432d61859.setContent(html_6b6d4a5bfcdffcd19261deb3cf90fc54);
+            
+        
+
+        marker_ed5c86ba3ddaaa9f6cdc489cf4ca2a52.bindPopup(popup_9ef5fc284971bd2ce98535b432d61859)
+        ;
+
+        
+    
+    
+            marker_ed5c86ba3ddaaa9f6cdc489cf4ca2a52.bindTooltip(
+                `<div>
+                     Nancy (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed5c86ba3ddaaa9f6cdc489cf4ca2a52.setIcon(icon_6e316505fcb1b5c0da089a7bea34b67f);
+            
+    
+            var marker_97a0d5ae20fd959019d456af7470ca0d = L.marker(
+                [48.8924, 2.2067],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_75329b0581fffc4fe246957e4cae316b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9e83389af42ba9cf2d59729ae99f0b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3db15f375b417531477d081667f1219e = $(`<div id="html_3db15f375b417531477d081667f1219e" style="width: 100.0%; height: 100.0%;"><b>Max Forestier</b><br>Type : CH<br>Ville : Nanterre</div>`)[0];
+                popup_d9e83389af42ba9cf2d59729ae99f0b6.setContent(html_3db15f375b417531477d081667f1219e);
+            
+        
+
+        marker_97a0d5ae20fd959019d456af7470ca0d.bindPopup(popup_d9e83389af42ba9cf2d59729ae99f0b6)
+        ;
+
+        
+    
+    
+            marker_97a0d5ae20fd959019d456af7470ca0d.bindTooltip(
+                `<div>
+                     Nanterre (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97a0d5ae20fd959019d456af7470ca0d.setIcon(icon_75329b0581fffc4fe246957e4cae316b);
+            
+    
+            var marker_1a65f8a6a508906de707a4b302e4cc6c = L.marker(
+                [47.2184, -1.5536],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_8babcdc8ccd3c6bd404c7e95fc4a5162 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c99dce49cd353695dc3d84c9317b88da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c896be444fb61bb7c3cc2b89cfc078ff = $(`<div id="html_c896be444fb61bb7c3cc2b89cfc078ff" style="width: 100.0%; height: 100.0%;"><b>Nantes</b><br>Type : CHU<br>Ville : Nantes</div>`)[0];
+                popup_c99dce49cd353695dc3d84c9317b88da.setContent(html_c896be444fb61bb7c3cc2b89cfc078ff);
+            
+        
+
+        marker_1a65f8a6a508906de707a4b302e4cc6c.bindPopup(popup_c99dce49cd353695dc3d84c9317b88da)
+        ;
+
+        
+    
+    
+            marker_1a65f8a6a508906de707a4b302e4cc6c.bindTooltip(
+                `<div>
+                     Nantes (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a65f8a6a508906de707a4b302e4cc6c.setIcon(icon_8babcdc8ccd3c6bd404c7e95fc4a5162);
+            
+    
+            var marker_97a3f83ee01969d121d04705973bf198 = L.marker(
+                [43.7102, 7.262],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_acb0d9b04b52597da881d60f8605b308 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43f9432124a11770594c032539e174ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e642469bb80b680b50e3655e2df85b9d = $(`<div id="html_e642469bb80b680b50e3655e2df85b9d" style="width: 100.0%; height: 100.0%;"><b>Archet</b><br>Type : CHU<br>Ville : Nice</div>`)[0];
+                popup_43f9432124a11770594c032539e174ee.setContent(html_e642469bb80b680b50e3655e2df85b9d);
+            
+        
+
+        marker_97a3f83ee01969d121d04705973bf198.bindPopup(popup_43f9432124a11770594c032539e174ee)
+        ;
+
+        
+    
+    
+            marker_97a3f83ee01969d121d04705973bf198.bindTooltip(
+                `<div>
+                     Nice (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97a3f83ee01969d121d04705973bf198.setIcon(icon_acb0d9b04b52597da881d60f8605b308);
+            
+    
+            var marker_f444739882e7832ae2b2c67b51364a3f = L.marker(
+                [43.8367, 4.3601],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_1b5b10ce7ba4873dabb7fdf862a3302e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12f2ce360f5bc0b80238aa024c86514c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c496c1b16d3a385b66c858afc7c7856a = $(`<div id="html_c496c1b16d3a385b66c858afc7c7856a" style="width: 100.0%; height: 100.0%;"><b>Caremeau</b><br>Type : CHU<br>Ville : Nimes</div>`)[0];
+                popup_12f2ce360f5bc0b80238aa024c86514c.setContent(html_c496c1b16d3a385b66c858afc7c7856a);
+            
+        
+
+        marker_f444739882e7832ae2b2c67b51364a3f.bindPopup(popup_12f2ce360f5bc0b80238aa024c86514c)
+        ;
+
+        
+    
+    
+            marker_f444739882e7832ae2b2c67b51364a3f.bindTooltip(
+                `<div>
+                     Nimes (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f444739882e7832ae2b2c67b51364a3f.setIcon(icon_1b5b10ce7ba4873dabb7fdf862a3302e);
+            
+    
+            var marker_bbe60c556260f9f508ef98664b98f585 = L.marker(
+                [46.3237, -0.46],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_fca6506bc9d1c9d766906104c30a89ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc4303aed708fb8e76ff1de3dc487d2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a427b74e91fdae268511392cd2d3f1f3 = $(`<div id="html_a427b74e91fdae268511392cd2d3f1f3" style="width: 100.0%; height: 100.0%;"><b>Niort</b><br>Type : CH<br>Ville : Niort</div>`)[0];
+                popup_fc4303aed708fb8e76ff1de3dc487d2f.setContent(html_a427b74e91fdae268511392cd2d3f1f3);
+            
+        
+
+        marker_bbe60c556260f9f508ef98664b98f585.bindPopup(popup_fc4303aed708fb8e76ff1de3dc487d2f)
+        ;
+
+        
+    
+    
+            marker_bbe60c556260f9f508ef98664b98f585.bindTooltip(
+                `<div>
+                     Niort (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbe60c556260f9f508ef98664b98f585.setIcon(icon_fca6506bc9d1c9d766906104c30a89ff);
+            
+    
+            var marker_d82d7e6ae405af43fee61add6a8d2b0d = L.marker(
+                [47.9029, 1.9093],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_26d8b3128a78c69354e579e699e5b676 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcc3de9cba9eb482d79c25907ff304d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8122543fdb6f4c38fb51aab5d1df4fc7 = $(`<div id="html_8122543fdb6f4c38fb51aab5d1df4fc7" style="width: 100.0%; height: 100.0%;"><b>La source</b><br>Type : CH<br>Ville : Orléans</div>`)[0];
+                popup_bcc3de9cba9eb482d79c25907ff304d9.setContent(html_8122543fdb6f4c38fb51aab5d1df4fc7);
+            
+        
+
+        marker_d82d7e6ae405af43fee61add6a8d2b0d.bindPopup(popup_bcc3de9cba9eb482d79c25907ff304d9)
+        ;
+
+        
+    
+    
+            marker_d82d7e6ae405af43fee61add6a8d2b0d.bindTooltip(
+                `<div>
+                     Orléans (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d82d7e6ae405af43fee61add6a8d2b0d.setIcon(icon_26d8b3128a78c69354e579e699e5b676);
+            
+    
+            var marker_4ed72ea48dcc3739dd19b16124f0ea21 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_47955989c5c1f5100dfe69c2ab2e945b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d40f28c130be5423f4e1e7f0c8e77240 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b3763400b21c20ce80aa2661df1cfe2 = $(`<div id="html_9b3763400b21c20ce80aa2661df1cfe2" style="width: 100.0%; height: 100.0%;"><b>AP-HP Ambroise Paré</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_d40f28c130be5423f4e1e7f0c8e77240.setContent(html_9b3763400b21c20ce80aa2661df1cfe2);
+            
+        
+
+        marker_4ed72ea48dcc3739dd19b16124f0ea21.bindPopup(popup_d40f28c130be5423f4e1e7f0c8e77240)
+        ;
+
+        
+    
+    
+            marker_4ed72ea48dcc3739dd19b16124f0ea21.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ed72ea48dcc3739dd19b16124f0ea21.setIcon(icon_47955989c5c1f5100dfe69c2ab2e945b);
+            
+    
+            var marker_fdd57913f2cfd54f806ab79806cd8a98 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f1c8143a8ec2e6099b312b44c6b908cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41c512c8639ad3d28acf000522a94b10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2093c00e3970644d0cf8cc416da28bc9 = $(`<div id="html_2093c00e3970644d0cf8cc416da28bc9" style="width: 100.0%; height: 100.0%;"><b>AP-HP Avicenne</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_41c512c8639ad3d28acf000522a94b10.setContent(html_2093c00e3970644d0cf8cc416da28bc9);
+            
+        
+
+        marker_fdd57913f2cfd54f806ab79806cd8a98.bindPopup(popup_41c512c8639ad3d28acf000522a94b10)
+        ;
+
+        
+    
+    
+            marker_fdd57913f2cfd54f806ab79806cd8a98.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdd57913f2cfd54f806ab79806cd8a98.setIcon(icon_f1c8143a8ec2e6099b312b44c6b908cd);
+            
+    
+            var marker_66b7f93e6d89eea0456ca02cd126281b = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_e661a9c56f815bc462731640fc807824 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68cb545f070dd44c80339e526377acff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d98dc450ec809856f82950affad05f9 = $(`<div id="html_0d98dc450ec809856f82950affad05f9" style="width: 100.0%; height: 100.0%;"><b>AP-HP Beaujon</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_68cb545f070dd44c80339e526377acff.setContent(html_0d98dc450ec809856f82950affad05f9);
+            
+        
+
+        marker_66b7f93e6d89eea0456ca02cd126281b.bindPopup(popup_68cb545f070dd44c80339e526377acff)
+        ;
+
+        
+    
+    
+            marker_66b7f93e6d89eea0456ca02cd126281b.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66b7f93e6d89eea0456ca02cd126281b.setIcon(icon_e661a9c56f815bc462731640fc807824);
+            
+    
+            var marker_ef1ae620d2a54b79629970e839852abb = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_521492a9fa3394c46fa1e185369cecaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1421d16db63ba1c6e721f42758968443 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a99189da7b71dcc574272f060f9f4d0 = $(`<div id="html_2a99189da7b71dcc574272f060f9f4d0" style="width: 100.0%; height: 100.0%;"><b>AP-HP Kremlin Bicêtre</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_1421d16db63ba1c6e721f42758968443.setContent(html_2a99189da7b71dcc574272f060f9f4d0);
+            
+        
+
+        marker_ef1ae620d2a54b79629970e839852abb.bindPopup(popup_1421d16db63ba1c6e721f42758968443)
+        ;
+
+        
+    
+    
+            marker_ef1ae620d2a54b79629970e839852abb.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef1ae620d2a54b79629970e839852abb.setIcon(icon_521492a9fa3394c46fa1e185369cecaa);
+            
+    
+            var marker_a3d2f522755c1870ef4ff1a3c460992d = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f562fd8120c25967b81811f51f7c107b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e14577567455a073f1210238b20e39c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eaac7b9ed7cbdb0081083c41cb89480 = $(`<div id="html_3eaac7b9ed7cbdb0081083c41cb89480" style="width: 100.0%; height: 100.0%;"><b>AP-HP Antoine Béclère</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_4e14577567455a073f1210238b20e39c.setContent(html_3eaac7b9ed7cbdb0081083c41cb89480);
+            
+        
+
+        marker_a3d2f522755c1870ef4ff1a3c460992d.bindPopup(popup_4e14577567455a073f1210238b20e39c)
+        ;
+
+        
+    
+    
+            marker_a3d2f522755c1870ef4ff1a3c460992d.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3d2f522755c1870ef4ff1a3c460992d.setIcon(icon_f562fd8120c25967b81811f51f7c107b);
+            
+    
+            var marker_40f897e6ddf3055d32eccf46741b45b5 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_5e1ce1e4b432692fe698c581cf268836 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51d9a35b74dbf739c6cc6aa5ed76202f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d09cf0dc7a8e2af80cad364a79369335 = $(`<div id="html_d09cf0dc7a8e2af80cad364a79369335" style="width: 100.0%; height: 100.0%;"><b>AP-HP Bichat-Claude-Bernard</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_51d9a35b74dbf739c6cc6aa5ed76202f.setContent(html_d09cf0dc7a8e2af80cad364a79369335);
+            
+        
+
+        marker_40f897e6ddf3055d32eccf46741b45b5.bindPopup(popup_51d9a35b74dbf739c6cc6aa5ed76202f)
+        ;
+
+        
+    
+    
+            marker_40f897e6ddf3055d32eccf46741b45b5.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40f897e6ddf3055d32eccf46741b45b5.setIcon(icon_5e1ce1e4b432692fe698c581cf268836);
+            
+    
+            var marker_3357df7fbe782b887d3208f578d657c1 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f65df7a63235174020a14a36c7774d80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_820b1244178480e90708d55ae63383dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb1985b33b60fe637ddfa8a4e3a33278 = $(`<div id="html_eb1985b33b60fe637ddfa8a4e3a33278" style="width: 100.0%; height: 100.0%;"><b>AP-HP Cochin</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_820b1244178480e90708d55ae63383dd.setContent(html_eb1985b33b60fe637ddfa8a4e3a33278);
+            
+        
+
+        marker_3357df7fbe782b887d3208f578d657c1.bindPopup(popup_820b1244178480e90708d55ae63383dd)
+        ;
+
+        
+    
+    
+            marker_3357df7fbe782b887d3208f578d657c1.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3357df7fbe782b887d3208f578d657c1.setIcon(icon_f65df7a63235174020a14a36c7774d80);
+            
+    
+            var marker_856c326a766d195b9d7fa05392f6dbe5 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_e37cc5f3ca65722dd2b0bb10d42a2d83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59ac1109424417b222ccfd5fa22fb195 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93ee325eec5907bd2d64b7217830300b = $(`<div id="html_93ee325eec5907bd2d64b7217830300b" style="width: 100.0%; height: 100.0%;"><b>AP-HP Hôtel Dieu</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_59ac1109424417b222ccfd5fa22fb195.setContent(html_93ee325eec5907bd2d64b7217830300b);
+            
+        
+
+        marker_856c326a766d195b9d7fa05392f6dbe5.bindPopup(popup_59ac1109424417b222ccfd5fa22fb195)
+        ;
+
+        
+    
+    
+            marker_856c326a766d195b9d7fa05392f6dbe5.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_856c326a766d195b9d7fa05392f6dbe5.setIcon(icon_e37cc5f3ca65722dd2b0bb10d42a2d83);
+            
+    
+            var marker_3fa0afc3d27293ab8b285d97f2ba3137 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_3871b3a1d0593c53f9bf543ac1cebef9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8ddda5d6e91cbb27f91dccff5dc55e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80eafcfd61eb6ac76a0bf274e6433cd6 = $(`<div id="html_80eafcfd61eb6ac76a0bf274e6433cd6" style="width: 100.0%; height: 100.0%;"><b>AP-HP Henri Mondor</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_f8ddda5d6e91cbb27f91dccff5dc55e9.setContent(html_80eafcfd61eb6ac76a0bf274e6433cd6);
+            
+        
+
+        marker_3fa0afc3d27293ab8b285d97f2ba3137.bindPopup(popup_f8ddda5d6e91cbb27f91dccff5dc55e9)
+        ;
+
+        
+    
+    
+            marker_3fa0afc3d27293ab8b285d97f2ba3137.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3fa0afc3d27293ab8b285d97f2ba3137.setIcon(icon_3871b3a1d0593c53f9bf543ac1cebef9);
+            
+    
+            var marker_72fedfd1bf0365e81759e23c7272d097 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_003660bbf8a7b50df444ac7ea5f71827 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5b63abede7d67b98263d1ffe009fc00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c99d3216227f392fd4c0d89c91c6cec = $(`<div id="html_9c99d3216227f392fd4c0d89c91c6cec" style="width: 100.0%; height: 100.0%;"><b>AP-HP Necker</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_a5b63abede7d67b98263d1ffe009fc00.setContent(html_9c99d3216227f392fd4c0d89c91c6cec);
+            
+        
+
+        marker_72fedfd1bf0365e81759e23c7272d097.bindPopup(popup_a5b63abede7d67b98263d1ffe009fc00)
+        ;
+
+        
+    
+    
+            marker_72fedfd1bf0365e81759e23c7272d097.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72fedfd1bf0365e81759e23c7272d097.setIcon(icon_003660bbf8a7b50df444ac7ea5f71827);
+            
+    
+            var marker_129834b77a2ef5c3fb2b4a0b88128743 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_a22b794f99551a877153eece09b734d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af069c931183a2a13337d637faf82e35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec559da7387afe7fad6e2c3867b4c324 = $(`<div id="html_ec559da7387afe7fad6e2c3867b4c324" style="width: 100.0%; height: 100.0%;"><b>AP-HP HEGP</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_af069c931183a2a13337d637faf82e35.setContent(html_ec559da7387afe7fad6e2c3867b4c324);
+            
+        
+
+        marker_129834b77a2ef5c3fb2b4a0b88128743.bindPopup(popup_af069c931183a2a13337d637faf82e35)
+        ;
+
+        
+    
+    
+            marker_129834b77a2ef5c3fb2b4a0b88128743.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_129834b77a2ef5c3fb2b4a0b88128743.setIcon(icon_a22b794f99551a877153eece09b734d2);
+            
+    
+            var marker_76d664d0c0a687cbcb47ea636366aadd = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_1a8621592c3ae9084dcb8f31270fc816 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d006f2a367cf1cdeb2b14ecb95bf6cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bf649332cd0540963449c42603d8cc4 = $(`<div id="html_5bf649332cd0540963449c42603d8cc4" style="width: 100.0%; height: 100.0%;"><b>AP-HP Lariboisiere</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_7d006f2a367cf1cdeb2b14ecb95bf6cc.setContent(html_5bf649332cd0540963449c42603d8cc4);
+            
+        
+
+        marker_76d664d0c0a687cbcb47ea636366aadd.bindPopup(popup_7d006f2a367cf1cdeb2b14ecb95bf6cc)
+        ;
+
+        
+    
+    
+            marker_76d664d0c0a687cbcb47ea636366aadd.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76d664d0c0a687cbcb47ea636366aadd.setIcon(icon_1a8621592c3ae9084dcb8f31270fc816);
+            
+    
+            var marker_b7d0103bdcbe8546d8dee70d726342f4 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_394c4c44fb45ec4bea6a04d3c0068abb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8747c41c5f4ce8b209910f14da370b98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d9b515e90f032f735d58f152ae0dd6f = $(`<div id="html_7d9b515e90f032f735d58f152ae0dd6f" style="width: 100.0%; height: 100.0%;"><b>AP-HP Pitié Salpêtrière </b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_8747c41c5f4ce8b209910f14da370b98.setContent(html_7d9b515e90f032f735d58f152ae0dd6f);
+            
+        
+
+        marker_b7d0103bdcbe8546d8dee70d726342f4.bindPopup(popup_8747c41c5f4ce8b209910f14da370b98)
+        ;
+
+        
+    
+    
+            marker_b7d0103bdcbe8546d8dee70d726342f4.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7d0103bdcbe8546d8dee70d726342f4.setIcon(icon_394c4c44fb45ec4bea6a04d3c0068abb);
+            
+    
+            var marker_d8fd506fb4d2ee880a505977bfadf926 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_e58e36da4190d643d94cc1ea5f80dbab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6668817872559511d5e69fa535166a6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fde53dc52066112cbba40a46e67e0e5a = $(`<div id="html_fde53dc52066112cbba40a46e67e0e5a" style="width: 100.0%; height: 100.0%;"><b>AP-HP Raymond Poincaré</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_6668817872559511d5e69fa535166a6e.setContent(html_fde53dc52066112cbba40a46e67e0e5a);
+            
+        
+
+        marker_d8fd506fb4d2ee880a505977bfadf926.bindPopup(popup_6668817872559511d5e69fa535166a6e)
+        ;
+
+        
+    
+    
+            marker_d8fd506fb4d2ee880a505977bfadf926.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8fd506fb4d2ee880a505977bfadf926.setIcon(icon_e58e36da4190d643d94cc1ea5f80dbab);
+            
+    
+            var marker_784744b07c3207ececeee969d2be411b = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_8f2904be99c43065d55b4af5b513c0f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2519f04d5a5686b292ef72ebdcc7135a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_851c6a9d4f8fea30c77e3e362111d6a7 = $(`<div id="html_851c6a9d4f8fea30c77e3e362111d6a7" style="width: 100.0%; height: 100.0%;"><b>AP-HP Saint-Antoine</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_2519f04d5a5686b292ef72ebdcc7135a.setContent(html_851c6a9d4f8fea30c77e3e362111d6a7);
+            
+        
+
+        marker_784744b07c3207ececeee969d2be411b.bindPopup(popup_2519f04d5a5686b292ef72ebdcc7135a)
+        ;
+
+        
+    
+    
+            marker_784744b07c3207ececeee969d2be411b.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_784744b07c3207ececeee969d2be411b.setIcon(icon_8f2904be99c43065d55b4af5b513c0f9);
+            
+    
+            var marker_15a39038afbec150a7cb5b2a0dec406f = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f6b6b6c68fdce33b8933098df1a60ac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8426477151ff95da72ea2bf4c0979bf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be793366145eb2a0e0c983c14234c72c = $(`<div id="html_be793366145eb2a0e0c983c14234c72c" style="width: 100.0%; height: 100.0%;"><b>AP-HP Saint Louis </b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_8426477151ff95da72ea2bf4c0979bf7.setContent(html_be793366145eb2a0e0c983c14234c72c);
+            
+        
+
+        marker_15a39038afbec150a7cb5b2a0dec406f.bindPopup(popup_8426477151ff95da72ea2bf4c0979bf7)
+        ;
+
+        
+    
+    
+            marker_15a39038afbec150a7cb5b2a0dec406f.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15a39038afbec150a7cb5b2a0dec406f.setIcon(icon_f6b6b6c68fdce33b8933098df1a60ac6);
+            
+    
+            var marker_605394c99b47960f21440173dffe32d0 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_6072f8b2ff1a5e1bdfdc838964f3d919 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3390b93f66a484617cf80c275888e543 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f8559a18ca987522b350e0d6a61bd9d = $(`<div id="html_6f8559a18ca987522b350e0d6a61bd9d" style="width: 100.0%; height: 100.0%;"><b>AP-HP Tenon</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_3390b93f66a484617cf80c275888e543.setContent(html_6f8559a18ca987522b350e0d6a61bd9d);
+            
+        
+
+        marker_605394c99b47960f21440173dffe32d0.bindPopup(popup_3390b93f66a484617cf80c275888e543)
+        ;
+
+        
+    
+    
+            marker_605394c99b47960f21440173dffe32d0.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_605394c99b47960f21440173dffe32d0.setIcon(icon_6072f8b2ff1a5e1bdfdc838964f3d919);
+            
+    
+            var marker_cb6b83735f32421fc85a9ea851892bf4 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_b1a4e618b86f572789e63a82d801ad2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8732f810bb75d6f45ff18680dcf94af4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30895ff8fb8bfa0210f730da6e5f73c8 = $(`<div id="html_30895ff8fb8bfa0210f730da6e5f73c8" style="width: 100.0%; height: 100.0%;"><b>Saint Joseph & Marie Lannelongue</b><br>Type : HP<br>Ville : Paris</div>`)[0];
+                popup_8732f810bb75d6f45ff18680dcf94af4.setContent(html_30895ff8fb8bfa0210f730da6e5f73c8);
+            
+        
+
+        marker_cb6b83735f32421fc85a9ea851892bf4.bindPopup(popup_8732f810bb75d6f45ff18680dcf94af4)
+        ;
+
+        
+    
+    
+            marker_cb6b83735f32421fc85a9ea851892bf4.bindTooltip(
+                `<div>
+                     Paris (HP)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb6b83735f32421fc85a9ea851892bf4.setIcon(icon_b1a4e618b86f572789e63a82d801ad2f);
+            
+    
+            var marker_5a8c9a85319b1048727e67f1dff7cd9b = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_df3ba346f74b73442e2f1dc7ea497c51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06ee01c58380e121bcac94bca0d32dc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb3fa12e5faf3330d6340450fe478949 = $(`<div id="html_eb3fa12e5faf3330d6340450fe478949" style="width: 100.0%; height: 100.0%;"><b>AP-HP - Louis Mourier</b><br>Type : CHU<br>Ville : Paris</div>`)[0];
+                popup_06ee01c58380e121bcac94bca0d32dc3.setContent(html_eb3fa12e5faf3330d6340450fe478949);
+            
+        
+
+        marker_5a8c9a85319b1048727e67f1dff7cd9b.bindPopup(popup_06ee01c58380e121bcac94bca0d32dc3)
+        ;
+
+        
+    
+    
+            marker_5a8c9a85319b1048727e67f1dff7cd9b.bindTooltip(
+                `<div>
+                     Paris (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a8c9a85319b1048727e67f1dff7cd9b.setIcon(icon_df3ba346f74b73442e2f1dc7ea497c51);
+            
+    
+            var marker_a8bfc40bef339eccf5a7f5a8fd18cef8 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f789357513b2453e5e7e9cd9ec04ff44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a43fcffc71533f1c451bbe469cb4a1f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1706f5460edc5e340cb4b7568d12a366 = $(`<div id="html_1706f5460edc5e340cb4b7568d12a366" style="width: 100.0%; height: 100.0%;"><b>Diaconesses -Reuilly</b><br>Type : HP<br>Ville : Paris</div>`)[0];
+                popup_a43fcffc71533f1c451bbe469cb4a1f4.setContent(html_1706f5460edc5e340cb4b7568d12a366);
+            
+        
+
+        marker_a8bfc40bef339eccf5a7f5a8fd18cef8.bindPopup(popup_a43fcffc71533f1c451bbe469cb4a1f4)
+        ;
+
+        
+    
+    
+            marker_a8bfc40bef339eccf5a7f5a8fd18cef8.bindTooltip(
+                `<div>
+                     Paris (HP)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8bfc40bef339eccf5a7f5a8fd18cef8.setIcon(icon_f789357513b2453e5e7e9cd9ec04ff44);
+            
+    
+            var marker_cc0f25cc92e437c9e70aef4d7c54f881 = L.marker(
+                [43.2951, -0.3708],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_766a3d82858f7d8bceaa420a2b062dae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15df1ffaefa7a294c3b76d07f1c741e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baf2b0cf37ca2f05978270f8b240308b = $(`<div id="html_baf2b0cf37ca2f05978270f8b240308b" style="width: 100.0%; height: 100.0%;"><b>Pau</b><br>Type : CH<br>Ville : Pau</div>`)[0];
+                popup_15df1ffaefa7a294c3b76d07f1c741e2.setContent(html_baf2b0cf37ca2f05978270f8b240308b);
+            
+        
+
+        marker_cc0f25cc92e437c9e70aef4d7c54f881.bindPopup(popup_15df1ffaefa7a294c3b76d07f1c741e2)
+        ;
+
+        
+    
+    
+            marker_cc0f25cc92e437c9e70aef4d7c54f881.bindTooltip(
+                `<div>
+                     Pau (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc0f25cc92e437c9e70aef4d7c54f881.setIcon(icon_766a3d82858f7d8bceaa420a2b062dae);
+            
+    
+            var marker_f9515d18e5a209d8a190b42e4474bbb7 = L.marker(
+                [45.184, 0.721],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_16df84a3312bf0d3196efc10d26d282d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9821830e795240c1e82b5933469d97c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5f01fd7212742dbf47d5e4ca334091e = $(`<div id="html_e5f01fd7212742dbf47d5e4ca334091e" style="width: 100.0%; height: 100.0%;"><b>Périgueux</b><br>Type : CH<br>Ville : Perigueux</div>`)[0];
+                popup_9821830e795240c1e82b5933469d97c3.setContent(html_e5f01fd7212742dbf47d5e4ca334091e);
+            
+        
+
+        marker_f9515d18e5a209d8a190b42e4474bbb7.bindPopup(popup_9821830e795240c1e82b5933469d97c3)
+        ;
+
+        
+    
+    
+            marker_f9515d18e5a209d8a190b42e4474bbb7.bindTooltip(
+                `<div>
+                     Perigueux (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9515d18e5a209d8a190b42e4474bbb7.setIcon(icon_16df84a3312bf0d3196efc10d26d282d);
+            
+    
+            var marker_af9e672c3b6252babe3c35605c6ba7a0 = L.marker(
+                [42.6887, 2.8948],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_619f70e54d56e780226581b5442b9839 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2ebb89a6333660df82290de97b1a896 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8b4559eb98623dda84c0d02a97b9762 = $(`<div id="html_e8b4559eb98623dda84c0d02a97b9762" style="width: 100.0%; height: 100.0%;"><b>Perpignan</b><br>Type : CH<br>Ville : Perpignan</div>`)[0];
+                popup_d2ebb89a6333660df82290de97b1a896.setContent(html_e8b4559eb98623dda84c0d02a97b9762);
+            
+        
+
+        marker_af9e672c3b6252babe3c35605c6ba7a0.bindPopup(popup_d2ebb89a6333660df82290de97b1a896)
+        ;
+
+        
+    
+    
+            marker_af9e672c3b6252babe3c35605c6ba7a0.bindTooltip(
+                `<div>
+                     Perpignan (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af9e672c3b6252babe3c35605c6ba7a0.setIcon(icon_619f70e54d56e780226581b5442b9839);
+            
+    
+            var marker_541edbd96edea394cecfb5d2179c36cf = L.marker(
+                [16.2416, -61.533],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_023d8bf26afcfa10597fb428c8a376f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5876a46981e9d312beee839d015504a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_128f20b81e131eeb63a741f5b5bbd853 = $(`<div id="html_128f20b81e131eeb63a741f5b5bbd853" style="width: 100.0%; height: 100.0%;"><b>Pointe à Pitre</b><br>Type : CHU<br>Ville : Pointe à Pitre (Guadeloupe)</div>`)[0];
+                popup_5876a46981e9d312beee839d015504a0.setContent(html_128f20b81e131eeb63a741f5b5bbd853);
+            
+        
+
+        marker_541edbd96edea394cecfb5d2179c36cf.bindPopup(popup_5876a46981e9d312beee839d015504a0)
+        ;
+
+        
+    
+    
+            marker_541edbd96edea394cecfb5d2179c36cf.bindTooltip(
+                `<div>
+                     Pointe à Pitre (Guadeloupe) (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_541edbd96edea394cecfb5d2179c36cf.setIcon(icon_023d8bf26afcfa10597fb428c8a376f9);
+            
+    
+            var marker_1a616e106884a50d4308283ed771db0f = L.marker(
+                [48.929, 2.04],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_47d39213ef817bc197cbd48d30617b7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07511a6afe0bacddd4d1de8db79b9cd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5956ae467c5b046c8b1bc1676b6aa8ff = $(`<div id="html_5956ae467c5b046c8b1bc1676b6aa8ff" style="width: 100.0%; height: 100.0%;"><b>GHT Yvelines Nord</b><br>Type : CH<br>Ville : Poissy</div>`)[0];
+                popup_07511a6afe0bacddd4d1de8db79b9cd5.setContent(html_5956ae467c5b046c8b1bc1676b6aa8ff);
+            
+        
+
+        marker_1a616e106884a50d4308283ed771db0f.bindPopup(popup_07511a6afe0bacddd4d1de8db79b9cd5)
+        ;
+
+        
+    
+    
+            marker_1a616e106884a50d4308283ed771db0f.bindTooltip(
+                `<div>
+                     Poissy (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a616e106884a50d4308283ed771db0f.setIcon(icon_47d39213ef817bc197cbd48d30617b7b);
+            
+    
+            var marker_72a7405a18646b298926abf7fc5b1b37 = L.marker(
+                [46.5802, 0.3404],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_19814aba325eebbeae9cf7a5a37df9c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a92be7a4b396a4e4a76bc2a053545f9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a468f77b5adf31999582f7a7e05c9ccd = $(`<div id="html_a468f77b5adf31999582f7a7e05c9ccd" style="width: 100.0%; height: 100.0%;"><b>Poitiers</b><br>Type : CHU<br>Ville : Poitiers</div>`)[0];
+                popup_a92be7a4b396a4e4a76bc2a053545f9c.setContent(html_a468f77b5adf31999582f7a7e05c9ccd);
+            
+        
+
+        marker_72a7405a18646b298926abf7fc5b1b37.bindPopup(popup_a92be7a4b396a4e4a76bc2a053545f9c)
+        ;
+
+        
+    
+    
+            marker_72a7405a18646b298926abf7fc5b1b37.bindTooltip(
+                `<div>
+                     Poitiers (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72a7405a18646b298926abf7fc5b1b37.setIcon(icon_19814aba325eebbeae9cf7a5a37df9c3);
+            
+    
+            var marker_59540421c54d3300121c503f6161d47e = L.marker(
+                [47.9961, -4.0963],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_d4a7e4fefdb740109ad18522b7b09262 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a75d354736a1a01c06b2aaf64335dd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89336fa40e35de9474fc8e952a640abf = $(`<div id="html_89336fa40e35de9474fc8e952a640abf" style="width: 100.0%; height: 100.0%;"><b>De Cornouaille</b><br>Type : CH<br>Ville : Quimper</div>`)[0];
+                popup_1a75d354736a1a01c06b2aaf64335dd7.setContent(html_89336fa40e35de9474fc8e952a640abf);
+            
+        
+
+        marker_59540421c54d3300121c503f6161d47e.bindPopup(popup_1a75d354736a1a01c06b2aaf64335dd7)
+        ;
+
+        
+    
+    
+            marker_59540421c54d3300121c503f6161d47e.bindTooltip(
+                `<div>
+                     Quimper (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59540421c54d3300121c503f6161d47e.setIcon(icon_d4a7e4fefdb740109ad18522b7b09262);
+            
+    
+            var marker_db0d3def3fab205b02c17cf4f41c40ef = L.marker(
+                [49.2583, 4.0317],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_e74c54e866d70a1754d97431b8e83894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59051edb5d0c13d3e462355a2226b0ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03f396408dc2a48a30ded597b255297a = $(`<div id="html_03f396408dc2a48a30ded597b255297a" style="width: 100.0%; height: 100.0%;"><b>Reims</b><br>Type : CHU<br>Ville : Reims</div>`)[0];
+                popup_59051edb5d0c13d3e462355a2226b0ed.setContent(html_03f396408dc2a48a30ded597b255297a);
+            
+        
+
+        marker_db0d3def3fab205b02c17cf4f41c40ef.bindPopup(popup_59051edb5d0c13d3e462355a2226b0ed)
+        ;
+
+        
+    
+    
+            marker_db0d3def3fab205b02c17cf4f41c40ef.bindTooltip(
+                `<div>
+                     Reims (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db0d3def3fab205b02c17cf4f41c40ef.setIcon(icon_e74c54e866d70a1754d97431b8e83894);
+            
+    
+            var marker_5b1743986b2f30465e79c150b83bca87 = L.marker(
+                [48.1173, -1.6778],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_56a5455245395918ee55093722b0b57e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a715273492d92ef407ebc9d986efe7b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95d03d6df2da0214cb74caf7ce0ec72c = $(`<div id="html_95d03d6df2da0214cb74caf7ce0ec72c" style="width: 100.0%; height: 100.0%;"><b>Pontchaillou</b><br>Type : CHU<br>Ville : Rennes</div>`)[0];
+                popup_a715273492d92ef407ebc9d986efe7b6.setContent(html_95d03d6df2da0214cb74caf7ce0ec72c);
+            
+        
+
+        marker_5b1743986b2f30465e79c150b83bca87.bindPopup(popup_a715273492d92ef407ebc9d986efe7b6)
+        ;
+
+        
+    
+    
+            marker_5b1743986b2f30465e79c150b83bca87.bindTooltip(
+                `<div>
+                     Rennes (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b1743986b2f30465e79c150b83bca87.setIcon(icon_56a5455245395918ee55093722b0b57e);
+            
+    
+            var marker_2020416a25f32c6216cdb48da21f44ac = L.marker(
+                [44.35, 2.575],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_23f7b922829e856395bda0aed56a18f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9489bb11ad086e96525fdd6d529e218c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b04bf8bf64a32bea27c70c46aceaa2a5 = $(`<div id="html_b04bf8bf64a32bea27c70c46aceaa2a5" style="width: 100.0%; height: 100.0%;"><b>Rodez</b><br>Type : CH<br>Ville : Rodez</div>`)[0];
+                popup_9489bb11ad086e96525fdd6d529e218c.setContent(html_b04bf8bf64a32bea27c70c46aceaa2a5);
+            
+        
+
+        marker_2020416a25f32c6216cdb48da21f44ac.bindPopup(popup_9489bb11ad086e96525fdd6d529e218c)
+        ;
+
+        
+    
+    
+            marker_2020416a25f32c6216cdb48da21f44ac.bindTooltip(
+                `<div>
+                     Rodez (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2020416a25f32c6216cdb48da21f44ac.setIcon(icon_23f7b922829e856395bda0aed56a18f5);
+            
+    
+            var marker_ab2407f9f45696a224e8e2c54547b4e1 = L.marker(
+                [49.4431, 1.0993],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_842cd390cf4ab26ffd961ca7652df993 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90885e924ab2629a7ae0d8dd6fe453a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19834d872860488d3b4d1d57902d3bb2 = $(`<div id="html_19834d872860488d3b4d1d57902d3bb2" style="width: 100.0%; height: 100.0%;"><b>Rouen</b><br>Type : CHU<br>Ville : Rouen</div>`)[0];
+                popup_90885e924ab2629a7ae0d8dd6fe453a5.setContent(html_19834d872860488d3b4d1d57902d3bb2);
+            
+        
+
+        marker_ab2407f9f45696a224e8e2c54547b4e1.bindPopup(popup_90885e924ab2629a7ae0d8dd6fe453a5)
+        ;
+
+        
+    
+    
+            marker_ab2407f9f45696a224e8e2c54547b4e1.bindTooltip(
+                `<div>
+                     Rouen (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab2407f9f45696a224e8e2c54547b4e1.setIcon(icon_842cd390cf4ab26ffd961ca7652df993);
+            
+    
+            var marker_2d93a2256a96d889a72b49a0b84083ac = L.marker(
+                [48.5146, -2.765],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_f8320c85dc928d9dda771196bb41cfee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_306669ceb0996a66f60fc815fd08ed04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d32c262e2b5c52f663f98e00956a1eb = $(`<div id="html_3d32c262e2b5c52f663f98e00956a1eb" style="width: 100.0%; height: 100.0%;"><b>Yves Le Foll</b><br>Type : CH<br>Ville : Saint-Brieuc</div>`)[0];
+                popup_306669ceb0996a66f60fc815fd08ed04.setContent(html_3d32c262e2b5c52f663f98e00956a1eb);
+            
+        
+
+        marker_2d93a2256a96d889a72b49a0b84083ac.bindPopup(popup_306669ceb0996a66f60fc815fd08ed04)
+        ;
+
+        
+    
+    
+            marker_2d93a2256a96d889a72b49a0b84083ac.bindTooltip(
+                `<div>
+                     Saint-Brieuc (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d93a2256a96d889a72b49a0b84083ac.setIcon(icon_f8320c85dc928d9dda771196bb41cfee);
+            
+    
+            var marker_9bdab0ffd9aebe13965594be9fc873b2 = L.marker(
+                [48.6493, -2.0257],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_9a25e1a4604eb7501860278f8efd7be0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daa476ab1b083e224099a85b1a7bd4c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c8cc8c9faecc90b371820264de5fd12 = $(`<div id="html_4c8cc8c9faecc90b371820264de5fd12" style="width: 100.0%; height: 100.0%;"><b>Saint Malo</b><br>Type : CH<br>Ville : Saint-Malo</div>`)[0];
+                popup_daa476ab1b083e224099a85b1a7bd4c1.setContent(html_4c8cc8c9faecc90b371820264de5fd12);
+            
+        
+
+        marker_9bdab0ffd9aebe13965594be9fc873b2.bindPopup(popup_daa476ab1b083e224099a85b1a7bd4c1)
+        ;
+
+        
+    
+    
+            marker_9bdab0ffd9aebe13965594be9fc873b2.bindTooltip(
+                `<div>
+                     Saint-Malo (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9bdab0ffd9aebe13965594be9fc873b2.setIcon(icon_9a25e1a4604eb7501860278f8efd7be0);
+            
+    
+            var marker_f672bab78470604c511d9d44c7f7c82a = L.marker(
+                [-21.3393, 55.4781],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_947caccd8cc62a25fcae3a652641e51d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6542cfc4d9b5b49b052135c19346ab48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99da576ca3716d6aec6a2b49f0c4b1b = $(`<div id="html_a99da576ca3716d6aec6a2b49f0c4b1b" style="width: 100.0%; height: 100.0%;"><b>Saint-Pierre</b><br>Type : CHU<br>Ville : Saint-Pierre (Réunion)</div>`)[0];
+                popup_6542cfc4d9b5b49b052135c19346ab48.setContent(html_a99da576ca3716d6aec6a2b49f0c4b1b);
+            
+        
+
+        marker_f672bab78470604c511d9d44c7f7c82a.bindPopup(popup_6542cfc4d9b5b49b052135c19346ab48)
+        ;
+
+        
+    
+    
+            marker_f672bab78470604c511d9d44c7f7c82a.bindTooltip(
+                `<div>
+                     Saint-Pierre (Réunion) (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f672bab78470604c511d9d44c7f7c82a.setIcon(icon_947caccd8cc62a25fcae3a652641e51d);
+            
+    
+            var marker_9cc9446b0054e3d079ae653549f8e1ab = L.marker(
+                [48.9362, 2.3574],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_65e0348c16744ec982f30feada567de1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0804bcb28b522f28b929900109c7fe49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72f902b3696b0cd4bb6ad557b9fcd28a = $(`<div id="html_72f902b3696b0cd4bb6ad557b9fcd28a" style="width: 100.0%; height: 100.0%;"><b>Delafontaine</b><br>Type : CH<br>Ville : Saint-Denis</div>`)[0];
+                popup_0804bcb28b522f28b929900109c7fe49.setContent(html_72f902b3696b0cd4bb6ad557b9fcd28a);
+            
+        
+
+        marker_9cc9446b0054e3d079ae653549f8e1ab.bindPopup(popup_0804bcb28b522f28b929900109c7fe49)
+        ;
+
+        
+    
+    
+            marker_9cc9446b0054e3d079ae653549f8e1ab.bindTooltip(
+                `<div>
+                     Saint-Denis (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9cc9446b0054e3d079ae653549f8e1ab.setIcon(icon_65e0348c16744ec982f30feada567de1);
+            
+    
+            var marker_4b14209867bfaa14d2de239f27d7c783 = L.marker(
+                [45.4397, 4.3872],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_04ebc4b5942f45d5f1e27cc6f34e1079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd8bd6696b20ad9c198c1ffb293b4262 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0081c5064f2d1f5eac90a64390519cba = $(`<div id="html_0081c5064f2d1f5eac90a64390519cba" style="width: 100.0%; height: 100.0%;"><b>Saint-Etienne</b><br>Type : CHU<br>Ville : Saint-Etienne</div>`)[0];
+                popup_fd8bd6696b20ad9c198c1ffb293b4262.setContent(html_0081c5064f2d1f5eac90a64390519cba);
+            
+        
+
+        marker_4b14209867bfaa14d2de239f27d7c783.bindPopup(popup_fd8bd6696b20ad9c198c1ffb293b4262)
+        ;
+
+        
+    
+    
+            marker_4b14209867bfaa14d2de239f27d7c783.bindTooltip(
+                `<div>
+                     Saint-Etienne (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b14209867bfaa14d2de239f27d7c783.setIcon(icon_04ebc4b5942f45d5f1e27cc6f34e1079);
+            
+    
+            var marker_f6b2c8997d19066cc11eafd4611efe53 = L.marker(
+                [48.8422, 2.4156],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_2e847da17a86695f82d6d95ad038a95e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d347c0064acd4442035b60e4364cd8fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff81311819383bf6f3c6c5005741da8f = $(`<div id="html_ff81311819383bf6f3c6c5005741da8f" style="width: 100.0%; height: 100.0%;"><b>HIA Bégin</b><br>Type : MI<br>Ville : Saint-Mandé</div>`)[0];
+                popup_d347c0064acd4442035b60e4364cd8fe.setContent(html_ff81311819383bf6f3c6c5005741da8f);
+            
+        
+
+        marker_f6b2c8997d19066cc11eafd4611efe53.bindPopup(popup_d347c0064acd4442035b60e4364cd8fe)
+        ;
+
+        
+    
+    
+            marker_f6b2c8997d19066cc11eafd4611efe53.bindTooltip(
+                `<div>
+                     Saint-Mandé (MI)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6b2c8997d19066cc11eafd4611efe53.setIcon(icon_2e847da17a86695f82d6d95ad038a95e);
+            
+    
+            var marker_a8bb1a48ba53ad75aae090da91ef1eec = L.marker(
+                [48.5734, 7.7521],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_3f9c2ef5f7e5a3966ff96de8f85fe781 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b713510126589b4e961cfa4a0fa7797a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44e157d725081804c2053b38c31186bb = $(`<div id="html_44e157d725081804c2053b38c31186bb" style="width: 100.0%; height: 100.0%;"><b>Hôpital Civil</b><br>Type : CHU<br>Ville : Strasbourg</div>`)[0];
+                popup_b713510126589b4e961cfa4a0fa7797a.setContent(html_44e157d725081804c2053b38c31186bb);
+            
+        
+
+        marker_a8bb1a48ba53ad75aae090da91ef1eec.bindPopup(popup_b713510126589b4e961cfa4a0fa7797a)
+        ;
+
+        
+    
+    
+            marker_a8bb1a48ba53ad75aae090da91ef1eec.bindTooltip(
+                `<div>
+                     Strasbourg (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8bb1a48ba53ad75aae090da91ef1eec.setIcon(icon_3f9c2ef5f7e5a3966ff96de8f85fe781);
+            
+    
+            var marker_cc2df331da7528d266f98651391636ec = L.marker(
+                [48.8718, 2.2293],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_9474adb8697a0515438d6887cc98292b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6b1036c5e2caf408965279137220b1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a44384a76d35ac2a77a9620552ee635 = $(`<div id="html_0a44384a76d35ac2a77a9620552ee635" style="width: 100.0%; height: 100.0%;"><b>Foch</b><br>Type : HP<br>Ville : Suresnes</div>`)[0];
+                popup_a6b1036c5e2caf408965279137220b1d.setContent(html_0a44384a76d35ac2a77a9620552ee635);
+            
+        
+
+        marker_cc2df331da7528d266f98651391636ec.bindPopup(popup_a6b1036c5e2caf408965279137220b1d)
+        ;
+
+        
+    
+    
+            marker_cc2df331da7528d266f98651391636ec.bindTooltip(
+                `<div>
+                     Suresnes (HP)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc2df331da7528d266f98651391636ec.setIcon(icon_9474adb8697a0515438d6887cc98292b);
+            
+    
+            var marker_54c8a35521a744028f3f19a384e565fd = L.marker(
+                [46.37, 6.48],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_4c3544c07a7213ad1a260392cde634ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b71b5ad3a33074baf87b1309672ba1b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c356e662ac28a53f2e9ea0db4679873 = $(`<div id="html_0c356e662ac28a53f2e9ea0db4679873" style="width: 100.0%; height: 100.0%;"><b>Hopitaux du Leman</b><br>Type : CH<br>Ville : Thonon-les-Bains</div>`)[0];
+                popup_b71b5ad3a33074baf87b1309672ba1b7.setContent(html_0c356e662ac28a53f2e9ea0db4679873);
+            
+        
+
+        marker_54c8a35521a744028f3f19a384e565fd.bindPopup(popup_b71b5ad3a33074baf87b1309672ba1b7)
+        ;
+
+        
+    
+    
+            marker_54c8a35521a744028f3f19a384e565fd.bindTooltip(
+                `<div>
+                     Thonon-les-Bains (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54c8a35521a744028f3f19a384e565fd.setIcon(icon_4c3544c07a7213ad1a260392cde634ff);
+            
+    
+            var marker_6d523f4c16bdf1842dfd3fc427243ac2 = L.marker(
+                [43.1257, 5.9306],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_b5c4c48d79eb532969f098e7668dbc3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee683785b5c025e85622297d7a17bfcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9077834397b405eb65ac9a34c75fa5a1 = $(`<div id="html_9077834397b405eb65ac9a34c75fa5a1" style="width: 100.0%; height: 100.0%;"><b>Sainte Musse</b><br>Type : CH<br>Ville : Toulon</div>`)[0];
+                popup_ee683785b5c025e85622297d7a17bfcf.setContent(html_9077834397b405eb65ac9a34c75fa5a1);
+            
+        
+
+        marker_6d523f4c16bdf1842dfd3fc427243ac2.bindPopup(popup_ee683785b5c025e85622297d7a17bfcf)
+        ;
+
+        
+    
+    
+            marker_6d523f4c16bdf1842dfd3fc427243ac2.bindTooltip(
+                `<div>
+                     Toulon (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d523f4c16bdf1842dfd3fc427243ac2.setIcon(icon_b5c4c48d79eb532969f098e7668dbc3d);
+            
+    
+            var marker_f828c8b16b7fab4aff58a01c1f599864 = L.marker(
+                [43.6047, 1.4442],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_9838976589df81d0541d25c036130929 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00adc5b0f3a98d65783f8c6441bef2bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26f4f5b6c7d3aa838e0c7d4b37cb21bb = $(`<div id="html_26f4f5b6c7d3aa838e0c7d4b37cb21bb" style="width: 100.0%; height: 100.0%;"><b>Purpan</b><br>Type : CHU<br>Ville : Toulouse</div>`)[0];
+                popup_00adc5b0f3a98d65783f8c6441bef2bd.setContent(html_26f4f5b6c7d3aa838e0c7d4b37cb21bb);
+            
+        
+
+        marker_f828c8b16b7fab4aff58a01c1f599864.bindPopup(popup_00adc5b0f3a98d65783f8c6441bef2bd)
+        ;
+
+        
+    
+    
+            marker_f828c8b16b7fab4aff58a01c1f599864.bindTooltip(
+                `<div>
+                     Toulouse (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f828c8b16b7fab4aff58a01c1f599864.setIcon(icon_9838976589df81d0541d25c036130929);
+            
+    
+            var marker_d28c29ca4a8fe63f3c5f1d04b82c5a18 = L.marker(
+                [50.7167, 3.1667],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_cc8945c5dc8c3d9d31f31e9d3b906040 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61facf3836487066b14157b5c3678c70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d6fa3ed86f9b389454e9b1797d4ff68 = $(`<div id="html_1d6fa3ed86f9b389454e9b1797d4ff68" style="width: 100.0%; height: 100.0%;"><b>Tourcoing</b><br>Type : CH<br>Ville : Tourcoing</div>`)[0];
+                popup_61facf3836487066b14157b5c3678c70.setContent(html_1d6fa3ed86f9b389454e9b1797d4ff68);
+            
+        
+
+        marker_d28c29ca4a8fe63f3c5f1d04b82c5a18.bindPopup(popup_61facf3836487066b14157b5c3678c70)
+        ;
+
+        
+    
+    
+            marker_d28c29ca4a8fe63f3c5f1d04b82c5a18.bindTooltip(
+                `<div>
+                     Tourcoing (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d28c29ca4a8fe63f3c5f1d04b82c5a18.setIcon(icon_cc8945c5dc8c3d9d31f31e9d3b906040);
+            
+    
+            var marker_996e67740c42195eb4d5b26ab0cfa05f = L.marker(
+                [47.3941, 0.6848],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_980b39cbf73a3f1d8d98f4fee02d2401 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e74ace874c3dc3ff0370c65e4b35c2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b20ca761f43901f5a059b358605c0605 = $(`<div id="html_b20ca761f43901f5a059b358605c0605" style="width: 100.0%; height: 100.0%;"><b>Bretonneau</b><br>Type : CHU<br>Ville : Tours</div>`)[0];
+                popup_4e74ace874c3dc3ff0370c65e4b35c2b.setContent(html_b20ca761f43901f5a059b358605c0605);
+            
+        
+
+        marker_996e67740c42195eb4d5b26ab0cfa05f.bindPopup(popup_4e74ace874c3dc3ff0370c65e4b35c2b)
+        ;
+
+        
+    
+    
+            marker_996e67740c42195eb4d5b26ab0cfa05f.bindTooltip(
+                `<div>
+                     Tours (CHU)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_996e67740c42195eb4d5b26ab0cfa05f.setIcon(icon_980b39cbf73a3f1d8d98f4fee02d2401);
+            
+    
+            var marker_0d42a7da87a52ee04ab2b8b039e80986 = L.marker(
+                [47.5167, 6.8333],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_0f37090fb6b5d53c940523d7b39b8fca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d33917514f141d8b16df952c4968a21a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a11453cc6dc2122b775194a96c5e29f = $(`<div id="html_6a11453cc6dc2122b775194a96c5e29f" style="width: 100.0%; height: 100.0%;"><b>Nord Franche-Comté</b><br>Type : CH<br>Ville : Trévenans</div>`)[0];
+                popup_d33917514f141d8b16df952c4968a21a.setContent(html_6a11453cc6dc2122b775194a96c5e29f);
+            
+        
+
+        marker_0d42a7da87a52ee04ab2b8b039e80986.bindPopup(popup_d33917514f141d8b16df952c4968a21a)
+        ;
+
+        
+    
+    
+            marker_0d42a7da87a52ee04ab2b8b039e80986.bindTooltip(
+                `<div>
+                     Trévenans (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d42a7da87a52ee04ab2b8b039e80986.setIcon(icon_0f37090fb6b5d53c940523d7b39b8fca);
+            
+    
+            var marker_be53702cad2a5f05aa15f34528af9c65 = L.marker(
+                [48.2973, 4.0744],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_022068c9567a6d8ffceb03577b922e81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_588da9b770f3f91502fa7cabc7fc4563 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c144b94e37af387f3dfe5af4499816c = $(`<div id="html_8c144b94e37af387f3dfe5af4499816c" style="width: 100.0%; height: 100.0%;"><b>Simone Veil</b><br>Type : CH<br>Ville : Troyes</div>`)[0];
+                popup_588da9b770f3f91502fa7cabc7fc4563.setContent(html_8c144b94e37af387f3dfe5af4499816c);
+            
+        
+
+        marker_be53702cad2a5f05aa15f34528af9c65.bindPopup(popup_588da9b770f3f91502fa7cabc7fc4563)
+        ;
+
+        
+    
+    
+            marker_be53702cad2a5f05aa15f34528af9c65.bindTooltip(
+                `<div>
+                     Troyes (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be53702cad2a5f05aa15f34528af9c65.setIcon(icon_022068c9567a6d8ffceb03577b922e81);
+            
+    
+            var marker_78b7f5dbe9e0f7eddb543b9b0164946c = L.marker(
+                [44.9334, 4.8924],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_8a9be5732809e376c0d8809ded72899d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b468d113d260960ab2d32baede8bfe9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36fe59a85e5074d8166a49f581e854b0 = $(`<div id="html_36fe59a85e5074d8166a49f581e854b0" style="width: 100.0%; height: 100.0%;"><b>Valence</b><br>Type : CH<br>Ville : Valence</div>`)[0];
+                popup_b468d113d260960ab2d32baede8bfe9b.setContent(html_36fe59a85e5074d8166a49f581e854b0);
+            
+        
+
+        marker_78b7f5dbe9e0f7eddb543b9b0164946c.bindPopup(popup_b468d113d260960ab2d32baede8bfe9b)
+        ;
+
+        
+    
+    
+            marker_78b7f5dbe9e0f7eddb543b9b0164946c.bindTooltip(
+                `<div>
+                     Valence (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78b7f5dbe9e0f7eddb543b9b0164946c.setIcon(icon_8a9be5732809e376c0d8809ded72899d);
+            
+    
+            var marker_d251bef5fab1d75f7f42b0b443050355 = L.marker(
+                [47.6582, -2.7608],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_3d8765d1848810abba183e0d920bc4a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb1278169a27457bab379c1a8f3c5afd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_513b6d025707728937fbe739382500c2 = $(`<div id="html_513b6d025707728937fbe739382500c2" style="width: 100.0%; height: 100.0%;"><b>Bretagne Atlantique</b><br>Type : CH<br>Ville : Vannes</div>`)[0];
+                popup_fb1278169a27457bab379c1a8f3c5afd.setContent(html_513b6d025707728937fbe739382500c2);
+            
+        
+
+        marker_d251bef5fab1d75f7f42b0b443050355.bindPopup(popup_fb1278169a27457bab379c1a8f3c5afd)
+        ;
+
+        
+    
+    
+            marker_d251bef5fab1d75f7f42b0b443050355.bindTooltip(
+                `<div>
+                     Vannes (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d251bef5fab1d75f7f42b0b443050355.setIcon(icon_3d8765d1848810abba183e0d920bc4a7);
+            
+    
+            var marker_111962a859e26424c23798d137cb04b9 = L.marker(
+                [48.8049, 2.1204],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_efaa049ffcb7ae39d8b4309c1bfb7de2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f57f0bc2e3de38f3b64813b650a70336 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17ccf5f843b20890342e31165aa5ab48 = $(`<div id="html_17ccf5f843b20890342e31165aa5ab48" style="width: 100.0%; height: 100.0%;"><b>Andre Mignot</b><br>Type : CH<br>Ville : Versailles</div>`)[0];
+                popup_f57f0bc2e3de38f3b64813b650a70336.setContent(html_17ccf5f843b20890342e31165aa5ab48);
+            
+        
+
+        marker_111962a859e26424c23798d137cb04b9.bindPopup(popup_f57f0bc2e3de38f3b64813b650a70336)
+        ;
+
+        
+    
+    
+            marker_111962a859e26424c23798d137cb04b9.bindTooltip(
+                `<div>
+                     Versailles (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_111962a859e26424c23798d137cb04b9.setIcon(icon_efaa049ffcb7ae39d8b4309c1bfb7de2);
+            
+    
+            var marker_cd472de5e8c0519d60ae672a25796e4a = L.marker(
+                [45.9833, 4.7167],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_464ac00b06c3b3d569bebb9666471ff9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa510c765821a3efdd8b868c0aaa9d2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a8b52681314c80a87864287390a91a8 = $(`<div id="html_7a8b52681314c80a87864287390a91a8" style="width: 100.0%; height: 100.0%;"><b>Hopitaux Nord-Ouest</b><br>Type : CH<br>Ville : Villefranche-sur-Saône</div>`)[0];
+                popup_fa510c765821a3efdd8b868c0aaa9d2d.setContent(html_7a8b52681314c80a87864287390a91a8);
+            
+        
+
+        marker_cd472de5e8c0519d60ae672a25796e4a.bindPopup(popup_fa510c765821a3efdd8b868c0aaa9d2d)
+        ;
+
+        
+    
+    
+            marker_cd472de5e8c0519d60ae672a25796e4a.bindTooltip(
+                `<div>
+                     Villefranche-sur-Saône (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd472de5e8c0519d60ae672a25796e4a.setIcon(icon_464ac00b06c3b3d569bebb9666471ff9);
+            
+    
+            var marker_263149c913b60e003153079a3ac8050d = L.marker(
+                [48.732, 2.448],
+                {
+}
+            ).addTo(marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2);
+        
+    
+            var icon_6d39362e6badeee62f69dcffdf078f41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "hospital-o",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0d29c3fbb7bfede8125e8945b5a87de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc4b5a492d8ae1f2611c5a0ff52fb6b9 = $(`<div id="html_fc4b5a492d8ae1f2611c5a0ff52fb6b9" style="width: 100.0%; height: 100.0%;"><b>Lucie & Raymond Aubrac</b><br>Type : CH<br>Ville : Villeneuve-Saint-Georges</div>`)[0];
+                popup_b0d29c3fbb7bfede8125e8945b5a87de.setContent(html_fc4b5a492d8ae1f2611c5a0ff52fb6b9);
+            
+        
+
+        marker_263149c913b60e003153079a3ac8050d.bindPopup(popup_b0d29c3fbb7bfede8125e8945b5a87de)
+        ;
+
+        
+    
+    
+            marker_263149c913b60e003153079a3ac8050d.bindTooltip(
+                `<div>
+                     Villeneuve-Saint-Georges (CH)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_263149c913b60e003153079a3ac8050d.setIcon(icon_6d39362e6badeee62f69dcffdf078f41);
+            
+    
+            marker_cluster_fd73ee720cbf0dcefcd1b609f65cb2b2.addTo(map_b44345d5d219e9ad48cbcfedaac6f22a);
+        
+</script>
+</html>
